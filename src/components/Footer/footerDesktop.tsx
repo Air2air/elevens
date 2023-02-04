@@ -51,7 +51,7 @@ export const FooterDesktop = (props: IFooterProps) => {
             <FooterLinkColumn>
               <FooterLink to="/about">About</FooterLink>
               <FooterLink to="/contact">Contact</FooterLink>
-              <FooterLink to="/articles">Articles</FooterLink>
+              {/* <FooterLink to="/articles">Articles</FooterLink> */}
             </FooterLinkColumn>
           </FooterColumn>
         </FooterContentRow>

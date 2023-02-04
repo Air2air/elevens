@@ -5,7 +5,7 @@ import CalloutList from "components/Callout/callOutList";
 import Heading from "components/Heading/heading";
 
 const CaseStudiesPage = () => {
-  const loopEndTime = 14000;
+  // const loopEndTime = 14000;
 
   return (
     <>
@@ -13,7 +13,7 @@ const CaseStudiesPage = () => {
         pageVideo={776446335}
         overlayOpacity={0.4}
         overlayColor={1}
-        loopEndTime={loopEndTime}
+        // loopEndTime={loopEndTime}
       />
       <Heading jsonFile="/data/casestudiesHeading.json" />
       <Spacer height={40} backgroundColor={2} />

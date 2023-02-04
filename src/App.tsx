@@ -7,6 +7,7 @@ import { dataRoutes } from "./routes/routes";
 import { usePageTracking } from "./components/Analytics/gaTracking";
 import { ChartSkeleton } from "components/Chart/chartComponents";
 import { BannerImageWrapper } from "components/Banner/bannerComponents";
+import FadeTransition from "utils/FadeTransition";
 
 const queryClient = new QueryClient();
 
@@ -25,11 +26,13 @@ const App = () => {
       <QueryClientProvider client={queryClient}>
         <Header />
         <Suspense fallback={<LoadingSkeleton />}>
-          <Routes>
-            {dataRoutes.map(({ path, element }) => (
-              <Route key={path} path={path} element={element} />
-            ))}
-          </Routes>
+          <FadeTransition>
+            <Routes>
+              {dataRoutes.map(({ path, element }) => (
+                <Route key={path} path={path} element={element} />
+              ))}
+            </Routes>
+          </FadeTransition>
         </Suspense>
         <Footer backgroundColor={5} />
       </QueryClientProvider>
