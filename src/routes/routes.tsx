@@ -7,7 +7,7 @@ const ContactPage = lazy(() => import("pages/Contact"));
 const HistoryPage = lazy(() => import("pages/History"));
 const HomePage = lazy(() => import("pages/Home"));
 const MarketsPage = lazy(() => import("pages/Markets"));
-const ReportsPage = lazy(() => import("pages/Vision"));
+const ReportsPage = lazy(() => import("pages/Reports"));
 const WhatWeDoPage = lazy(() => import("pages/WhatWeDo"));
 const VisionPage = lazy(() => import("pages/Vision"));
 

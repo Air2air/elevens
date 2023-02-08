@@ -1,4 +1,4 @@
-import{s as i,z as n,B as e,m as a}from"./bannerComponents-41f292de.js";import{s as o,t as r,u as s,o as d}from"./index-77d552a9.js";const h=t=>a(m,{style:{animation:t.hidden?"":d(t.index)},children:a(l,{style:{transform:t.rotate?"rotate(90deg)":""},children:t.label})},t.index),m=i.div`
+import{s as i,z as n,B as e,m as a}from"./bannerComponents-41f292de.js";import{t as o,u as r,v as d,o as s}from"./index-559c7700.js";const h=t=>a(m,{style:{animation:t.hidden?"":s(t.index)},children:a(l,{style:{transform:t.rotate?"rotate(90deg)":""},children:t.label})},t.index),m=i.div`
   position: absolute;
   top: 0;
   height: 100%;
@@ -20,7 +20,7 @@ import{s as i,z as n,B as e,m as a}from"./bannerComponents-41f292de.js";import{s
   @media (max-width: ${e}px) {
     ${r};
     left: 0%;
-    bottom: ${s+20}px;
+    bottom: ${d+20}px;
     text-align: right;
     transform-origin: 20% 18%;
     transform: rotate(90deg);
