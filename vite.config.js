@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react";
 import viteTsconfigPaths from "vite-tsconfig-paths";
 import svgr from "vite-plugin-svgr";
 import { VitePluginFonts } from "vite-plugin-fonts";
-import { chunkSplitPlugin } from 'vite-plugin-chunk-split';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -29,14 +28,16 @@ export default defineConfig({
             local: "Source Sans Pro",
             src: "/fonts/Source_Sans_Pro/*.ttf",
           },
-
+          {
+            name: "Cousine",
+            local: "Cousine",
+            src: "/fonts/Cousine/*.ttf",
+          },
         ],
         display: "auto",
         preload: true,
       },
-
     }),
-    chunkSplitPlugin()
   ],
   define: {
     "process.env": {},

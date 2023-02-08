@@ -1,4 +1,4 @@
-import{t as o,B as e,j as a}from"./bannerComponents-977adf2c.js";import{s as i}from"./vendor-cc4417f8.js";import{s as n,t as r,u as s,o as d}from"./index-afaf3e1b.js";const b=t=>a(m,{style:{animation:t.hidden?"":d(t.index)},children:a(l,{style:{transform:t.rotate?"rotate(90deg)":""},children:t.label})},t.index),m=i.div`
+import{s as i,z as n,B as e,m as a}from"./bannerComponents-41f292de.js";import{s as o,t as r,u as s,o as d}from"./index-77d552a9.js";const h=t=>a(m,{style:{animation:t.hidden?"":d(t.index)},children:a(l,{style:{transform:t.rotate?"rotate(90deg)":""},children:t.label})},t.index),m=i.div`
   position: absolute;
   top: 0;
   height: 100%;
@@ -10,9 +10,9 @@ import{t as o,B as e,j as a}from"./bannerComponents-977adf2c.js";import{s as i}f
 `,l=i.div`
   position: absolute;
   text-transform: uppercase;
-  color: ${o};
+  color: ${n};
   @media (min-width: ${e}px) {
-    ${n};
+    ${o};
     bottom: 10%;
     width: 100%;
     text-align: center;
@@ -27,4 +27,4 @@ import{t as o,B as e,j as a}from"./bannerComponents-977adf2c.js";import{s as i}f
     min-width: 160px;
   }
   /* background: green; */
-`;export{b as B};
+`;export{h as B};
