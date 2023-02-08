@@ -1,11 +1,13 @@
+
 import { lazy } from "react";
 const AboutPage = lazy(() => import("pages/About"));
-const ArticlesPage = lazy(() => import("pages/Articles"));
+const ArticlesPage = lazy(() => import("pages/Reports"));
 const CaseStudiesPage = lazy(() => import("pages/CaseStudies"));
 const ContactPage = lazy(() => import("pages/Contact"));
 const HistoryPage = lazy(() => import("pages/History"));
 const HomePage = lazy(() => import("pages/Home"));
 const MarketsPage = lazy(() => import("pages/Markets"));
+const ReportsPage = lazy(() => import("pages/Vision"));
 const WhatWeDoPage = lazy(() => import("pages/WhatWeDo"));
 const VisionPage = lazy(() => import("pages/Vision"));
 
@@ -34,7 +36,6 @@ export const dataRoutes = [
     section: "Contact",
     element: <ContactPage />,
   },
-
   {
     id: "History",
     path: "history",
@@ -59,6 +60,12 @@ export const dataRoutes = [
     section: "Markets",
     element: <MarketsPage />,
 
+  },
+  {
+    id: "Reports",
+    path: "reports",
+    section: "Reports",
+    element: <ReportsPage />,
   },
   {
     id: "WhatWeDo",

@@ -1,4 +1,4 @@
-
+import { QueryClient, QueryClientProvider } from "react-query";
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer/footer";
@@ -9,6 +9,7 @@ import { ChartSkeleton } from "components/Chart/chartComponents";
 import { BannerImageWrapper } from "components/Banner/bannerComponents";
 import FadeTransition from "utils/FadeTransition";
 
+const queryClient = new QueryClient();
 
 const App = () => {
   usePageTracking();
@@ -22,7 +23,7 @@ const App = () => {
 
   return (
     <>
-
+      <QueryClientProvider client={queryClient}>
         <Header />
         <Suspense fallback={<LoadingSkeleton />}>
           <FadeTransition>
@@ -34,7 +35,7 @@ const App = () => {
           </FadeTransition>
         </Suspense>
         <Footer backgroundColor={5} />
-
+      </QueryClientProvider>
     </>
   );
 };

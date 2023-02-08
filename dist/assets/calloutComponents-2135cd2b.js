@@ -1,18 +1,18 @@
-import{s as i,B as a,i as e,p as o,q as s,T as n,m as t}from"./bannerComponents-cd50e550.js";import{j as T,k as p,C as l}from"./index-c40c7c5c.js";const r=i.div`
+import{B as a,f as o,l as e,m as s,T as n,j as t}from"./bannerComponents-c18b3df6.js";import{s as i}from"./vendor-632b4abd.js";import{j as T,k as m,C as l}from"./index-db3c1ee9.js";const x=i.div`
   margin: 0 auto;
   z-index: +1;
   height: auto;
   text-align: left;
   @media (min-width: ${a}px) {
     padding: 50px 0;
-    /* width: ${e}; */
+    /* width: ${o}; */
   }
   @media (max-width: ${a}px) {
     padding: 20px 0;
-    /* width: ${o}; */
+    /* width: ${e}; */
   }
   /* background: red;; */
-`,x=i.div`
+`,O=i.div`
   color: ${s};
   height: auto;
   text-align: left;
@@ -22,6 +22,6 @@ import{s as i,B as a,i as e,p as o,q as s,T as n,m as t}from"./bannerComponents-
     ${T};
   }
   @media (max-width: ${a}px) {
-    ${p};
+    ${m};
   }
-`,O=d=>t(l,{...d,children:t("div",{style:{height:400}})});export{O as C,r as a,x as b};
+`,g=d=>t(l,{...d,children:t("div",{style:{height:400}})});export{g as C,x as a,O as b};

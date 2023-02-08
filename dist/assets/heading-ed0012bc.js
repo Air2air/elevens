@@ -1,4 +1,4 @@
-import{s as i,B as t,x as T,y as p,i as r,p as m,z as E,q as g,T as $,r as n,m as e,n as w}from"./bannerComponents-cd50e550.js";import{b as N,c as u,d as O,e as f}from"./index-c40c7c5c.js";const o=i.div`
+import{B as t,r as T,s as p,f as r,l as m,t as E,m as g,T as $,j as e,k as f}from"./bannerComponents-c18b3df6.js";import{s as i,r as n}from"./vendor-632b4abd.js";import{b as w,c as N,d as u,e as O}from"./index-db3c1ee9.js";const h=i.div`
   position: absolute;
   margin: 0 auto;
   top: 0;
@@ -30,10 +30,10 @@ import{s as i,B as t,x as T,y as p,i as r,p as m,z as E,q as g,T as $,r as n,m a
   color: ${E};
   text-shadow: 0 0 4px #000;
   @media (min-width: ${t}px) {
-    ${N}
+    ${w}
   }
   @media (max-width: ${t}px) {
-    ${u}
+    ${N}
   }
 `,H=i.div`
   display: flex;
@@ -57,9 +57,9 @@ import{s as i,B as t,x as T,y as p,i as r,p as m,z as E,q as g,T as $,r as n,m a
   text-shadow: 0 0 4px #000;
   /* background: red; */
   @media (min-width: ${t}px) {
-    ${O}
+    ${u}
   }
   @media (max-width: ${t}px) {
-    ${f}
+    ${O}
   }
-`,S=({jsonFile:x})=>{const[a,l]=n.useState([]),[s,c]=n.useState(0);return n.useEffect(()=>{(async()=>{const _=await(await fetch(x)).json();l(_)})()},[]),n.useEffect(()=>{const d=setInterval(()=>{c(h=>(h+1)%a.length)},6e3);return()=>clearInterval(d)},[a]),a.length?w(o,{children:[e(I,{children:e(D,{className:"animate__animated animate__fadeInDown",children:a[s].title})}),e(H,{children:e(B,{className:"animate__animated animate__fadeInUp animate__delay-1s",children:a[s].subhead})})]},s):e(o,{})};export{S as H};
+`,C=({jsonFile:l})=>{const[a,x]=n.useState([]),[s,c]=n.useState(0);return n.useEffect(()=>{(async()=>{const _=await(await fetch(l)).json();x(_)})()},[]),n.useEffect(()=>{const d=setInterval(()=>{c(o=>(o+1)%a.length)},6e3);return()=>clearInterval(d)},[a]),a.length?f(h,{children:[e(I,{children:e(D,{className:"animate__animated animate__fadeInDown",children:a[s].title})}),e(H,{children:e(B,{className:"animate__animated animate__fadeInUp animate__delay-1s",children:a[s].subhead})})]},s):e(h,{})};export{C as H};
