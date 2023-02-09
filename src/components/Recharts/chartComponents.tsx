@@ -12,9 +12,6 @@ import Container from "components/Container/container";
 
 export const ChartInner = styled.div`
   margin: 0 auto;
-  z-index: +1;
-  height: auto;
-  text-align: left;
   @media (min-width: ${BREAKPOINT}px) {
     padding: 50px 0;
     /* width: ${CONTENT_WIDTH_DESKTOP}; */
@@ -26,7 +23,7 @@ export const ChartInner = styled.div`
   /* background: red;; */
 `;
 
-export const ChartParagraph = styled.div`
+export const ChartDescription = styled.div`
   color: ${COLOR_TEXT};
   height: auto;
   text-align: left;
@@ -38,10 +35,12 @@ export const ChartParagraph = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     ${FONT_DEFAULT_MOBILE};
   }
+    /* background: gold; */
 `;
+
 
 export const ChartSkeleton = (props) => (
   <Container {...props}>
-    <div style={{ height: 400 }} />
+    <div style={{ height: props.height }} />
   </Container>
 );

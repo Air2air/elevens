@@ -1,4 +1,3 @@
-
 import { FetchData } from "fetch/fetch";
 import { ChartSkeleton } from "./chartComponents";
 import ChartItem from "./chartItem";
@@ -27,5 +26,3 @@ const ChartList = ({ jsonFile }) => {
 };
 
 export default ChartList;
-
-

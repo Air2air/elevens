@@ -2,8 +2,11 @@
   {
     "id": 1,
     "title": "Pre-Seed",
+    "description": "This is the description and explanation for this chart",
+    "textColor": "rgba(255, 255, 255, .5)",
+    "chartColor": "rgba(255, 255, 255, .4)",
     "backgroundColor": "hsl(210, 48%, 28%)",
-    "height": 500,
+    "height": 300,
     "baseUrl": "https://api.fda.gov/drug/event.json?",
     "parameters": "search=receivedate:[20221101+TO+20230101]",
     "resultLimit": "&count=receivedate"
@@ -11,8 +14,11 @@
   {
     "id": 2,
     "title": "Chart two",
+    "description": "This is the description and explanation for this chart",
+    "textColor": "rgba(255, 255, 255, .7)",
+    "chartColor": "rgba(255, 255, 255, .4)",
     "backgroundColor": "hsl(208, 50%, 21%)",
-    "height": 500,
+    "height": 300,
     "baseUrl": "https://api.fda.gov/drug/event.json?",
     "parameters": "search=receivedate:[20221101+TO+20230101]",
     "resultLimit": "&count=receivedate"
