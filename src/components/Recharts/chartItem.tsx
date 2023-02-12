@@ -11,9 +11,13 @@ const ChartItem = (props) => {
         <ChartInner>
           <TitleCallout title={props.title} />
           <AnimationOnScroll animateIn="animate__fadeIn" delay={0} offset={60}>
-            <div style={{ width: "100%", height: props.height }}>
-              <TimeSeriesChart {...props} />
-            </div>
+            {props.chartType === "table" ? (
+""
+            ) : (
+              <div style={{ width: "100%", height: props.height }}>
+                <TimeSeriesChart {...props} />
+              </div>
+            )}
             <ChartDescription>{props.description}</ChartDescription>
           </AnimationOnScroll>
         </ChartInner>
