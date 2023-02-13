@@ -1,8 +1,8 @@
 import Container from "components/Container/container";
 import { TitleCallout } from "components/Title/titleCallout";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+import BarChart from "./bar";
 import { ChartDescription, ChartInner } from "./chartComponents";
-import TimeSeriesChart from "./timeSeries";
+import AreaChart from "./area";
 
 const ChartItem = (props) => {
   return (
@@ -10,16 +10,11 @@ const ChartItem = (props) => {
       <Container {...props}>
         <ChartInner>
           <TitleCallout title={props.title} />
-          <AnimationOnScroll animateIn="animate__fadeIn" delay={0} offset={60}>
-            {props.chartType === "table" ? (
-""
-            ) : (
-              <div style={{ width: "100%", height: props.height }}>
-                <TimeSeriesChart {...props} />
-              </div>
-            )}
-            <ChartDescription>{props.description}</ChartDescription>
-          </AnimationOnScroll>
+          <div style={{ width: "100%", height: props.height }}>
+            {props.chartType === "bar" ? <BarChart {...props} /> : null}
+            {props.chartType === "area" ? <AreaChart {...props} /> : null}
+          </div>
+          <ChartDescription>{props.description}</ChartDescription>
         </ChartInner>
       </Container>
     </>

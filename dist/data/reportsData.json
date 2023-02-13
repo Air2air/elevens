@@ -1,7 +1,8 @@
 [
   {
     "id": 1,
-    "title": "Pre-Seed",
+    "type": "timeSeries",
+    "title": "Time Series - drug adverse events",
     "description": "This is the description and explanation for this chart",
     "textColor": "rgba(255, 255, 255, .5)",
     "chartColor": "rgba(255, 255, 255, .4)",
@@ -13,14 +14,15 @@
   },
   {
     "id": 2,
-    "title": "Chart two",
+    "type": "table",
+    "title": "Table",
     "description": "This is the description and explanation for this chart",
     "textColor": "rgba(255, 255, 255, .7)",
     "chartColor": "rgba(255, 255, 255, .4)",
     "backgroundColor": "hsl(208, 50%, 21%)",
     "height": 300,
-    "baseUrl": "https://api.fda.gov/drug/event.json?",
+    "baseUrl": "https://api.fda.gov/drug/drugsfda.json?",
     "parameters": "search=receivedate:[20221101+TO+20230101]",
-    "resultLimit": "&count=receivedate"
+    "resultLimit": "count=sponsor_name"
   }
 ]

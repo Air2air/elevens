@@ -1,20 +1,13 @@
 import Container from "components/Container/container";
-import TimeSeriesChart from "components/Recharts/timeSeries";
+import TimeSeriesChart from "components/Recharts/area";
 import { TitleCallout } from "components/Title/titleCallout";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { ReportDescription, ReportInner } from "./reportComponents";
 
 // detect if props.parameters includes "count"
 const ReportItem = (props) => {
-
   const resultType = props.resultLimit.includes("count") ? (
-    <TimeSeriesChart
-      baseUrl={props.baseUrl}
-      parameters={props.parameters}
-      resultLimit={props.resultLimit}
-      textColor={props.textColor}
-      chartColor={props.chartColor}
-    />
+    <TimeSeriesChart {...props} />
   ) : (
     <div>TODO: add other result types</div>
   );

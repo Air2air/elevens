@@ -1,28 +1,30 @@
 [
   {
     "id": 1,
-    "type": "timeSeries",
+    "dataKey": "time",
+    "chartType": "area",
     "title": "Time Series - drug adverse events",
     "description": "This is the description and explanation for this chart",
+    "height": 300,
     "textColor": "rgba(255, 255, 255, .5)",
     "chartColor": "rgba(255, 255, 255, .4)",
     "backgroundColor": "hsl(210, 48%, 28%)",
-    "height": 300,
-    "baseUrl": "https://api.fda.gov/drug/event.json?",
-    "parameters": "search=receivedate:[20221101+TO+20230101]",
+    "baseUrl": "https://api.fda.gov/drug/event.json",
+    "parameters": "?search=receivedate:[20221101+TO+20230101]",
     "resultLimit": "&count=receivedate"
   },
   {
     "id": 2,
-    "type": "table",
+    "dataKey": "term",
+    "chartType": "bar",
     "title": "Table",
     "description": "This is the description and explanation for this chart",
+    "height": 300,
     "textColor": "rgba(255, 255, 255, .7)",
     "chartColor": "rgba(255, 255, 255, .4)",
     "backgroundColor": "hsl(208, 50%, 21%)",
-    "height": 300,
-    "baseUrl": "https://api.fda.gov/drug/drugsfda.json?",
-    "parameters": "search=receivedate:[20221101+TO+20230101]",
-    "resultLimit": "count=sponsor_name"
+    "baseUrl": "https://api.fda.gov/drug/event.json",
+    "parameters": "?search=receivedate:[20140101+TO+20230211]&count=patient.drug.drugindication.exact",
+    "resultLimit": "&limit=5"
   }
 ]
