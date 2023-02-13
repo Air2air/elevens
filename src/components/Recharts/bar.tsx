@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
-import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
-import { FONT_FAMILY_CONDENSED } from "styles/Constants";
-import { formatDate } from "utils/formatDate";
+import React, { useEffect, useState } from "react";
+import ReactECharts from "echarts-for-react";
 
 interface BarQuery {
   dataKey?: string;
@@ -11,16 +9,14 @@ interface BarQuery {
   textColor?: string;
   chartColor?: string;
 }
-
 interface BarResult {
   dataKey?: string;
   term?: string;
   time?: string;
-  count: string;
+  count?: string;
 }
-
-const BarChartComponent = (props: BarQuery) => {
-  const [data, setData] = useState([]);
+const BarChart = (props: BarQuery) => {
+  const [data, setData] = useState<BarResult[]>([]);
 
   const requestAPI = props.baseUrl + props.parameters + props.resultLimit;
 
@@ -40,41 +36,32 @@ const BarChartComponent = (props: BarQuery) => {
     fetchData();
   }, []);
 
-  //detect whether type of pros.datakey is a number
 
-  return (
-    <ResponsiveContainer width="100%">
-      <BarChart
-        data={data}
-        margin={{ top: 30, right: 0, left: 0, bottom: 20 }}
-      >
-        <defs>
-          <linearGradient id="fillConfig" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor={props.chartColor} stopOpacity={1} />
-            <stop offset="85%" stopColor={props.chartColor} stopOpacity={0.2} />
-          </linearGradient>
-        </defs>
-        <XAxis
-          dataKey={props.dataKey}
-          tick={{ fill: props.textColor, fontFamily: FONT_FAMILY_CONDENSED }}
-          strokeWidth={0}
-          // tickFormatter={formatDate}
-          tickFormatter={props.dataKey === "time" ? formatDate : props.dataKey}
-        />
-        <YAxis
-          tick={{ fill: props.textColor, fontFamily: FONT_FAMILY_CONDENSED }}
-          strokeWidth={0}
-        />
-        <Bar
-          type="monotone"
-          dataKey="count"
-          strokeWidth={0}
-          fillOpacity={1}
-          fill={props.chartColor} //"url(#fillConfig)"
-        />
-      </BarChart>
-    </ResponsiveContainer>
-  );
+  const seriesData = data.map((item) => item.count);
+  const labelData = data.map((item) => item.term);
+
+  const options = {
+    grid: { top: 8, right: 8, bottom: 24, left: 40 },
+    xAxis: {
+      type: "category",
+      data: labelData, //['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+    },
+    yAxis: {
+      type: "value",
+    },
+    series: [
+      {
+        data: seriesData, //[820, 932, 901, 934, 1290, 1330, 1320],
+        type: "line",
+        smooth: true,
+      },
+    ],
+    tooltip: {
+      trigger: "axis",
+    },
+  };
+
+  return <ReactECharts option={options} />;
 };
 
-export default BarChartComponent;
+export default BarChart;
