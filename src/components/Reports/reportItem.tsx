@@ -1,26 +1,29 @@
 import Container from "components/Container/container";
-import TimeSeriesChart from "components/Recharts/area";
-import { TitleCallout } from "components/Title/titleCallout";
-import { AnimationOnScroll } from "react-animation-on-scroll";
-import { ReportDescription, ReportInner } from "./reportComponents";
+import EChart from "./echart";
+import {
+  ReportCategory,
+  ReportDescription,
+  ReportHeader,
+  ReportInner,
+  ReportSubCategory,
+} from "./reportComponents";
 
-// detect if props.parameters includes "count"
 const ReportItem = (props) => {
-  const resultType = props.resultLimit.includes("count") ? (
-    <TimeSeriesChart {...props} />
-  ) : (
-    <div>TODO: add other result types</div>
-  );
+  const resultType =
+    props.chartType !== "" ? <EChart {...props} /> : <div>Not a chart</div>;
 
   return (
     <>
       <Container {...props}>
         <ReportInner>
-          <AnimationOnScroll animateIn="animate__fadeIn" delay={0} offset={60}>
-            <TitleCallout title={props.subcategory} />
-            {resultType}
-            <ReportDescription>{props.description}</ReportDescription>
-          </AnimationOnScroll>
+          <ReportHeader style={{ color: props.textColor }}>
+            <ReportCategory>{props.category}</ReportCategory>
+            <ReportSubCategory>{props.subcategory}</ReportSubCategory>
+          </ReportHeader>
+          {resultType}
+          <ReportDescription style={{ color: props.textColor }}>
+            {props.description}
+          </ReportDescription>
         </ReportInner>
       </Container>
     </>

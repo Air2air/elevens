@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 
 export const FetchData = ({ file }) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
@@ -18,6 +19,7 @@ export const FetchData = ({ file }) => {
         const response = await fetch(file, { headers });
         const json = await response.json();
         setData(json);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (err: any) {
         setError(err);
       } finally {

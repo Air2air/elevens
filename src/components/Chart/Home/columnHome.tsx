@@ -9,6 +9,7 @@ import {
 } from "components/Chart/chartComponents";
 import { BarLabel } from "components/Chart/barLabel";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const ColumnHome = (props: any) => {
   const [columnIsEntering, setColumnIsEntering] = useState(0);
   const [columnWidth, setColumnWidth] = useState("100%");
