@@ -24,7 +24,6 @@ const EChart = (props: ReportProps) => {
     fetchData();
   }, []);
 
-
   const labelData = data.map((item) => item.time);
   const seriesData = data.map((item) => item.count);
 
@@ -46,12 +45,10 @@ const EChart = (props: ReportProps) => {
         itemStyle: {
           color: props.seriesColor,
         },
-        encode: {
-          // Map the "amount" column to X axis.
-          x: 'count',
-          // Map the "product" column to Y axis
-          y: 'term'
-        }
+        // encode: {
+        //   y: 'count',
+        //   x: 'term'
+        // }
       },
     ],
     tooltip: {
