@@ -32,9 +32,9 @@ export const LINE_HEIGHT_DEFAULT_DESKTOP = "1.8em";
 export const LINE_HEIGHT_DEFAULT_MOBILE = "1.6em";
 
 export const LINE_HEIGHT_HEADING_DESKTOP = "1.7em";
-export const LINE_HEIGHT_HEADING_MOBILE = "1.2em";
+export const LINE_HEIGHT_HEADING_MOBILE = "1em";
 
-export const LINE_HEIGHT_SUBHEAD_DESKTOP = "1.7em";
+export const LINE_HEIGHT_SUBHEAD_DESKTOP = "1em";
 export const LINE_HEIGHT_SUBHEAD_MOBILE = "1.2em";
 
 export const LINE_HEIGHT_CODE_DESKTOP = "1.5em";
@@ -59,8 +59,8 @@ export const FONT_BANNER_SUBHEAD_DESKTOP = `font-weight: ${FONT_WEIGHT_DEFAULT};
 export const FONT_BANNER_SUBHEAD_MOBILE = `font-weight: ${FONT_WEIGHT_DEFAULT}; font-size: ${FONT_SIZE_BANNER_SUBHEAD_MOBILE}; font-family: ${FONT_FAMILY_DEFAULT}; line-height: ${LINE_HEIGHT_SUBHEAD_MOBILE};`;
 
 // SUBHEAD
-export const FONT_SUBHEAD_DESKTOP = `font-weight: ${FONT_WEIGHT_LIGHT}; font-size: ${FONT_SIZE_SUBHEAD_DESKTOP}; font-family: ${FONT_FAMILY_HEADING}; line-height: ${LINE_HEIGHT_SUBHEAD_DESKTOP}; text-transform: uppercase; opacity: 0.5; margin-top:10px; margin-bottom:40px;`;
-export const FONT_SUBHEAD_MOBILE = `font-weight: ${FONT_WEIGHT_LIGHT}; font-size: ${FONT_SIZE_SUBHEAD_MOBILE}; font-family: ${FONT_FAMILY_HEADING}; line-height: ${LINE_HEIGHT_SUBHEAD_MOBILE}; text-transform: uppercase;  opacity: 0.7; margin-top:10px; margin-bottom:20px;`;
+export const FONT_SUBHEAD_DESKTOP = `font-weight: ${FONT_WEIGHT_LIGHT}; font-size: ${FONT_SIZE_SUBHEAD_DESKTOP}; font-family: ${FONT_FAMILY_HEADING}; line-height: ${LINE_HEIGHT_SUBHEAD_DESKTOP}; text-transform: uppercase; opacity: 0.5; `;
+export const FONT_SUBHEAD_MOBILE = `font-weight: ${FONT_WEIGHT_LIGHT}; font-size: ${FONT_SIZE_SUBHEAD_MOBILE}; font-family: ${FONT_FAMILY_HEADING}; line-height: ${LINE_HEIGHT_SUBHEAD_MOBILE}; text-transform: uppercase;  opacity: 0.7; `;
 
 // CAPTION
 export const FONT_CAPTION_DESKTOP = `font: ${FONT_WEIGHT_SEMIBOLD} ${FONT_SIZE_CAPTION_DESKTOP} ${FONT_FAMILY_CONDENSED}; text-transform: uppercase;`;

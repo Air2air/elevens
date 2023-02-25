@@ -2,6 +2,7 @@
   {
     "id": 1,
     "backgroundColor": "hsl(200, 44%, 12%)",
+    "seriesColor": "hsl(200, 44%, 14%)",
     "title": "Machine Learning in Healthcare",
     "description": "<p>As machine learning technology becomes more advanced and widely used in healthcare, startups that are developing innovative solutions using machine learning may be more likely to gain traction with customers and generate significant revenue.</p>",
     "source": "Deloitte, Frost & Sullivan, Tractica, Accenture",
@@ -65,6 +66,7 @@
   {
     "id": 2,
     "backgroundColor": "hsl(200, 44%, 14%)",
+    "seriesColor": "hsl(200, 44%, 14%)",
     "title": "Natural Language Processing in Healthcare",
     "description": "<p>As natural language processing technology continues to improve, there is potential for startups to develop machine learning-powered solutions that can accurately and efficiently extract and analyze data from unstructured sources such as medical records and research studies.</p>",
     "source": "Grand View, Market Research Future ",
@@ -128,6 +130,7 @@
   {
     "id": 3,
     "backgroundColor": "hsl(200, 44%, 16%)",
+    "seriesColor": "hsl(200, 44%, 14%)",
     "title": "EHR Integration",
     "description": "<p>As electronic health records become more prevalent and sophisticated, startups that can leverage machine learning to analyze data from EHRs may have a competitive advantage.</p> ",
     "source": "Grand View, Journal of the American Medical Association",
@@ -191,6 +194,7 @@
   {
     "id": 4,
     "backgroundColor": "hsl(200, 44%, 18%)",
+    "seriesColor": "hsl(200, 44%, 14%)",
     "title": "Predictive Analytics",
     "description": "<p>Machine learning algorithms are well-suited for predictive analytics in healthcare, and startups that can leverage this capability to develop tools for early disease detection, risk assessment, and treatment planning may be well-positioned for success.</p>",
     "source": "Journal of Medical Systems",
@@ -234,12 +238,14 @@
   {
     "id": 5,
     "backgroundColor": "hsl(200, 44%, 20%)",
+    "seriesColor": "hsl(200, 44%, 14%)",
     "title": "Explainability and Transparency",
     "description": "<p>As machine learning is increasingly used to make important decisions in healthcare, there is growing concern about the need for these algorithms to be transparent and explainable. Startups that prioritize explainability and transparency in their machine learning solutions may be more likely to gain customer trust and avoid regulatory hurdles.</p>"
   },
   {
     "id": 6,
     "backgroundColor": "hsl(200, 44%, 22%)",
+    "seriesColor": "hsl(200, 44%, 14%)",
     "title": "Wearables and other IoT devices",
     "description": "<p>The use of wearables and other IoT devices is increasing in healthcare, and startups that can develop machine learning-powered solutions that can make sense of this data may be well-positioned for success.</p>",
     "source": "Journal of Medical Internet Research, MarketsandMarkets ",
@@ -283,6 +289,7 @@
   {
     "id": 7,
     "backgroundColor": "hsl(200, 44%, 24%)",
+    "seriesColor": "hsl(200, 44%, 14%)",
     "title": "Blockchain for data security and sharing",
     "description": "<p>As the need for secure and transparent sharing of healthcare data increases, startups that can leverage blockchain technology and machine learning to develop secure and efficient data sharing solutions may have a competitive advantage.</p>",
     "source": "Allied Market Research, Deloitte",

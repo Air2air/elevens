@@ -4,22 +4,22 @@ import { FONT_FAMILY_CONDENSED } from "styles/Text";
 const EChart = (props) => {
   const options = {
     grid: {
-      top: 25,
-      right: 5,
+      top: 0,
+      right: 0,
       bottom: 40,
-      left: 5,
+      left: 0,
       show: false,
     },
     xAxis: {
       show: true,
       type: "category",
       data: props.chartData.map((item) => item.key),
-      name: props.chartData.xAxisName,
+      name: "date",
       axisLabel: {
         fontFamily: FONT_FAMILY_CONDENSED,
         fontSize: 17,
         color: "rgba(255,255,255,1)",
-        location: "top",
+        location: "inside",
         padding: [8,0,0,0]
       },
       axisLine: {
@@ -63,6 +63,7 @@ const EChart = (props) => {
           shadowOffsetX: 20,
         },
         showBackground: true,
+        itemStyle: {color: 'hsl(200, 44%, 36%)'},
         backgroundStyle: {
           color: "rgba(255, 255, 255, 0.05)",
         },
@@ -75,7 +76,7 @@ const EChart = (props) => {
   };
 
   return (
-    <ReactECharts option={options} style={{ height: "200px", width: "100%" }} />
+    <ReactECharts option={options} style={{ height: "150px", width: "100%" }} />
   );
 };
 
