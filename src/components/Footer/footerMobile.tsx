@@ -39,9 +39,9 @@ export const FooterMobile = (props: IFooterProps) => {
           <FooterLink to="/history">History</FooterLink>
         </FooterLinkColumn>
         <FooterLinkColumn>
+          <FooterLink to="/trends">Trends</FooterLink>
           <FooterLink to="/about">About</FooterLink>
           <FooterLink to="/contact">Contact</FooterLink>
-          {/* <FooterLink to="/articles">Articles</FooterLink> */}
         </FooterLinkColumn>
       </FooterContentRow>
 
