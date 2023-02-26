@@ -1,12 +1,23 @@
 import ReactECharts from "echarts-for-react";
+import { useState, useEffect } from "react";
+import { BREAKPOINT } from "styles/Constants";
 import { FONT_FAMILY_CONDENSED } from "styles/Text";
 
 const EChart = (props) => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
   const options = {
     grid: {
       top: 0,
       right: 0,
-      bottom: 40,
+      bottom: 30,
       left: 0,
       show: false,
     },
@@ -20,7 +31,7 @@ const EChart = (props) => {
         fontSize: 17,
         color: "rgba(255,255,255,1)",
         location: "inside",
-        padding: [8,0,0,0]
+        padding: [8, 0, 0, 0],
       },
       axisLine: {
         show: false, // Hide full Line
@@ -63,7 +74,7 @@ const EChart = (props) => {
           shadowOffsetX: 20,
         },
         showBackground: true,
-        itemStyle: {color: 'hsl(200, 44%, 36%)'},
+        itemStyle: { color: "hsl(200, 44%, 36%)" },
         backgroundStyle: {
           color: "rgba(255, 255, 255, 0.05)",
         },
@@ -76,7 +87,14 @@ const EChart = (props) => {
   };
 
   return (
-    <ReactECharts option={options} style={{ height: "150px", width: "100%" }} />
+    <ReactECharts
+      option={options}
+      style={{
+        padding: width > BREAKPOINT ? "12px 0" : "4px 0",
+        height: "150px",
+        width: "100%",
+      }}
+    />
   );
 };
 

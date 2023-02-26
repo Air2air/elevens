@@ -1,7 +1,6 @@
 import Container from "components/Container/container";
 import EChart from "./echart";
 import {
-  TrendsCategory,
   TrendsDescription,
   TrendsHeader,
   TrendsInner,
@@ -20,13 +19,11 @@ const TrendsItem = (props) => {
       <Container {...props}>
         <TrendsInner>
           <TrendsHeader>
-            <TrendsCategory>{props.title}</TrendsCategory>
+            <div className="title">{props.title}</div>
             <TrendsStats {...props} />
-          </TrendsHeader><br />
+          </TrendsHeader>
           {props.chartData >= "" && <EChart {...props} />}
-          
           <TrendsSource>{props.source}</TrendsSource>
-          <br />
           <TrendsDescription>{descriptionParsed}</TrendsDescription>
         </TrendsInner>
       </Container>

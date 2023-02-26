@@ -1,8 +1,6 @@
 import {
   BREAKPOINT,
   COLOR_TEXT,
-  CONTENT_WIDTH_DESKTOP,
-  CONTENT_WIDTH_MOBILE,
   FONT_DEFAULT_DESKTOP,
   FONT_DEFAULT_MOBILE,
   FONT_FAMILY_HEADING,
@@ -10,52 +8,58 @@ import {
 import styled from "styled-components";
 import Container from "components/Container/container";
 
+const headerHeightDesktop = 90;
+const headerHeightMobile = 60;
+const chartMarginDesktop = 30;
+const chartMarginMobile = 30;
+
 export const TrendsInner = styled.div`
   margin: 0 auto;
   @media (min-width: ${BREAKPOINT}px) {
     padding: 50px 0;
-    /* width: ${CONTENT_WIDTH_DESKTOP}; */
   }
   @media (max-width: ${BREAKPOINT}px) {
     padding: 30px 0;
-    /* width: ${CONTENT_WIDTH_MOBILE}; */
   }
   /* background: red;; */
 `;
 
-const headerHeight = 90;
-const chartMargin = 30;
-
 export const TrendsHeader = styled.div`
-  height: ${headerHeight}px;
   display: flex;
+
   align-items: center;
   justify-content: space-between;
-  margin-bottom: ${chartMargin}px;
   width: 100%;
-  /* background: red; */
-`;
-
-export const TrendsCategory = styled.div`
-  text-align: left;
   @media (min-width: ${BREAKPOINT}px) {
-    font-family: ${FONT_FAMILY_HEADING};
-    font-size: 1.7em;
-    line-height: 2em;
+    flex-direction: row;
+    height: ${headerHeightDesktop}px;
+    margin-bottom: ${chartMarginDesktop}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
-    font-family: ${FONT_FAMILY_HEADING};
-    font-size: 1.7em;
-    line-height: 2em;
+    flex-direction: column;
+    height: ${headerHeightMobile * 2}px;
+    margin-bottom: ${chartMarginMobile}px;
   }
-  color: ${COLOR_TEXT};
-`;
+  div.title {
+    font-family: ${FONT_FAMILY_HEADING};
+    color: ${COLOR_TEXT};
+    display: flex;
+      align-items: center;
+      justify-content: center;
+    @media (min-width: ${BREAKPOINT}px) {
+      height: ${headerHeightDesktop}px;
+      font-size: 1.6em;
+      line-height: 1em;
+    }
+    @media (max-width: ${BREAKPOINT}px) {
 
-export const TrendsLabel = styled.div`
-  height: ${headerHeight}px;
-  text-align: right;
-  opacity: 0.5;
-  color: ${COLOR_TEXT};
+      height: ${headerHeightMobile}px;
+      font-size: 1.4em;
+      line-height: 1em;
+    }
+    /* background: green; */
+  }
+  /* background: gold; */
 `;
 
 export const TrendsSource = styled.div`
@@ -68,11 +72,12 @@ export const TrendsSource = styled.div`
 export const TrendsDescription = styled.div`
   height: auto;
   text-align: left;
-  margin-top: ${chartMargin}px;
   @media (min-width: ${BREAKPOINT}px) {
+    margin-top: ${chartMarginDesktop}px;
     ${FONT_DEFAULT_DESKTOP};
   }
   @media (max-width: ${BREAKPOINT}px) {
+    margin-top: ${chartMarginMobile}px;
     ${FONT_DEFAULT_MOBILE};
   }
   color: ${COLOR_TEXT};
