@@ -1,9 +1,9 @@
 import ReactECharts from "echarts-for-react";
 import { useState, useEffect } from "react";
-import { BREAKPOINT } from "styles/Constants";
+import { BREAKPOINT, COLOR_CHART_BAR } from "styles/Constants";
 import { FONT_FAMILY_CONDENSED } from "styles/Text";
 
-const EChart = (props) => {
+const ChartSummary = ({ data }) => {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -13,19 +13,23 @@ const EChart = (props) => {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
+  const capAscending = [...data].sort((a, b) => a.cap - b.cap);
+
+  //const cagrAscending = [...data].sort((a, b) => a.cagr - b.cagr);
+
+  const chartDataSrc = capAscending;
+
   const options = {
     grid: {
       top: 0,
-      right: 0,
+      right: 10,
       bottom: 30,
-      left: 0,
+      left: 250,
       show: false,
     },
     xAxis: {
-      show: true,
-      type: "category",
-      data: props.chartData.map((item) => item.key),
-      name: "date",
+      type: "value",
+      show: false,
       axisLabel: {
         fontFamily: FONT_FAMILY_CONDENSED,
         fontSize: 17,
@@ -34,68 +38,65 @@ const EChart = (props) => {
         padding: [8, 0, 0, 0],
       },
       axisLine: {
-        show: false, // Hide full Line
+        show: false,
       },
       axisTick: {
-        show: false, // Hide full Line
+        show: false,
       },
     },
     yAxis: {
-      nameRotate: 90,
-      show: false,
-      nameLocation: "middle",
-      nameGap: 40,
-      type: "value",
-      name: "Market Cap (USD)",
-      nameTextStyle: {
-        fontFamily: FONT_FAMILY_CONDENSED,
-        fontSize: 19,
-        color: "rgba(255,255,255,0.8)",
-      },
+      type: "category",
+      data: chartDataSrc.map((item) => item.title),
+      nameLocation: "right",
+      name: "",
       axisLabel: {
         fontFamily: FONT_FAMILY_CONDENSED,
-        fontSize: 16,
+        fontSize: 17,
         color: "rgba(255,255,255,0.8)",
+        location: "inside",
+        padding: [0, 0, 0, 0],
       },
       axisLine: {
-        show: false, // Hide full Line
+        show: false,
+      },
+      axisTick: {
+        show: false,
+      },
+      axisBorder: {
+        show: false,
       },
     },
     series: [
       {
-        data: props.chartData.map((item) => item.value),
+        labelLine: false,
+        name: "Market size (in billions of USD)",
         type: "bar",
-        smooth: true,
+        data: chartDataSrc.map((item) => item.cap),
         label: {
           fontFamily: FONT_FAMILY_CONDENSED,
           fontSize: 17,
           show: true,
           position: "inside",
-          shadowOffsetX: 20,
         },
         showBackground: true,
-        itemStyle: { color: "hsl(200, 44%, 36%)" },
+        itemStyle: { color: COLOR_CHART_BAR },
         backgroundStyle: {
           color: "rgba(255, 255, 255, 0.05)",
         },
       },
     ],
-    tooltip: {
-      show: false,
-      trigger: "axis",
-    },
   };
 
   return (
     <ReactECharts
       option={options}
       style={{
-        padding: width > BREAKPOINT ? "12px 0" : "4px 0",
-        height: "150px",
+        padding: width > BREAKPOINT ? "10px 0" : "4px 0",
+        height: "280px",
         width: "100%",
       }}
     />
   );
 };
 
-export default EChart;
+export default ChartSummary;

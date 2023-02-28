@@ -12,6 +12,8 @@ export const COLOR_RED = "hsl(0, 80%, 50%)";
 export const COLOR_RED_HOVER = "hsl(0, 10%, 70%)";
 export const TEXT_OPACITY = 0.8;
 
+export const COLOR_CHART_BAR = "hsl(200, 44%, 44%)";
+
 // Themes
 export const COLOR_BLACK = "hsl(0, 0%, 0%)";
 export const COLOR_BASE = "hsl(0, 0%, 11%)";

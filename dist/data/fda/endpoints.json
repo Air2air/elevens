@@ -12,8 +12,8 @@
     "horizontal": true,
     "keyLabel": "term",
     "keySeries": "count",
-    "textColor": "hsla(210, 48%, 50%, .9)",
-    "seriesColor": "hsla(210, 48%, 50%, .9)",
+    "textColor": "hsla(360, 80%, 100%, 1.0)",
+    "seriesColor": "hsla(360, 80%, 40%, 1.0)",
     "backgroundColor": "hsl(210, 48%, 10%)"
   },
   {
@@ -29,8 +29,8 @@
     "horizontal": false,
     "keyLabel": "term",
     "keySeries": "count",
-    "textColor": "hsla(210, 48%, 100%, .9)",
-    "seriesColor": "hsla(210, 48%, 100%, .5)",
+    "textColor": "hsla(360, 80%, 100%, 1.0)",
+    "seriesColor": "hsla(360, 80%, 40%, 1.0)",
     "backgroundColor": "hsl(210, 48%, 13%)"
   },
   {
@@ -46,8 +46,8 @@
     "horizontal": false,
     "keyLabel": "term",
     "keySeries": "count",
-    "textColor": "hsla(210, 48%, 100%, .9)",
-    "seriesColor": "hsla(210, 48%, 100%, .5)",
+    "textColor": "hsla(360, 80%, 100%, 1.0)",
+    "seriesColor": "hsla(360, 80%, 40%, 1.0)",
     "backgroundColor": "hsl(210, 48%, 16%)"
   },
   {
@@ -63,8 +63,8 @@
     "horizontal": false,
     "keyLabel": "term",
     "keySeries": "count",
-    "textColor": "hsla(210, 48%, 100%, .9)",
-    "seriesColor": "hsla(210, 48%, 100%, .5)",
+    "textColor": "hsla(360, 80%, 100%, 1.0)",
+    "seriesColor": "hsla(360, 80%, 40%, 1.0)",
     "backgroundColor": "hsl(210, 48%, 19%)"
   },
   {
@@ -80,8 +80,8 @@
     "horizontal": false,
     "keyLabel": "term",
     "keySeries": "count",
-    "textColor": "hsla(210, 48%, 100%, .9)",
-    "seriesColor": "hsla(210, 48%, 100%, .5)",
+    "textColor": "hsla(360, 80%, 100%, 1.0)",
+    "seriesColor": "hsla(360, 80%, 40%, 1.0)",
     "backgroundColor": "hsl(210, 48%, 22%)"
   },
   {
@@ -97,8 +97,8 @@
     "horizontal": false,
     "keyLabel": "term",
     "keySeries": "count",
-    "textColor": "hsla(210, 48%, 100%, .9)",
-    "seriesColor": "hsla(210, 48%, 100%, .5)",
+    "textColor": "hsla(360, 80%, 100%, 1.0)",
+    "seriesColor": "hsla(360, 80%, 40%, 1.0)",
     "backgroundColor": "hsl(210, 48%, 25%)"
   },
   {
@@ -114,8 +114,8 @@
     "horizontal": false,
     "keyLabel": "term",
     "keySeries": "count",
-    "textColor": "hsla(210, 48%, 100%, .9)",
-    "seriesColor": "hsla(210, 48%, 100%, .5)",
+    "textColor": "hsla(360, 80%, 100%, 1.0)",
+    "seriesColor": "hsla(360, 80%, 40%, 1.0)",
     "backgroundColor": "hsl(210, 48%, 28%)"
   },
   {
@@ -131,8 +131,8 @@
     "horizontal": false,
     "keyLabel": "term",
     "keySeries": "count",
-    "textColor": "hsla(210, 48%, 100%, .9)",
-    "seriesColor": "hsla(210, 48%, 100%, .5)",
+    "textColor": "hsla(360, 80%, 100%, 1.0)",
+    "seriesColor": "hsla(360, 80%, 40%, 1.0)",
     "backgroundColor": "hsl(210, 48%, 31%)"
   },
   {
@@ -148,8 +148,8 @@
     "horizontal": false,
     "keyLabel": "term",
     "keySeries": "count",
-    "textColor": "hsla(210, 48%, 100%, .9)",
-    "seriesColor": "hsla(210, 48%, 100%, .5)",
+    "textColor": "hsla(360, 80%, 100%, 1.0)",
+    "seriesColor": "hsla(360, 80%, 40%, 1.0)",
     "backgroundColor": "hsl(210, 48%, 34%)"
   },
   {
@@ -165,8 +165,8 @@
     "horizontal": false,
     "keyLabel": "term",
     "keySeries": "count",
-    "textColor": "hsla(210, 48%, 100%, .9)",
-    "seriesColor": "hsla(210, 48%, 100%, .5)",
+    "textColor": "hsla(360, 80%, 100%, 1.0)",
+    "seriesColor": "hsla(360, 80%, 40%, 1.0)",
     "backgroundColor": "hsl(210, 48%, 37%)"
   },
   {
@@ -182,8 +182,8 @@
     "horizontal": false,
     "keyLabel": "term",
     "keySeries": "count",
-    "textColor": "hsla(210, 48%, 100%, .9)",
-    "seriesColor": "hsla(210, 48%, 100%, .5)",
+    "textColor": "hsla(360, 80%, 100%, 1.0)",
+    "seriesColor": "hsla(360, 80%, 40%, 1.0)",
     "backgroundColor": "hsl(210, 48%, 40%)"
   },
   {
@@ -199,8 +199,8 @@
     "horizontal": false,
     "keyLabel": "term",
     "keySeries": "count",
-    "textColor": "hsla(210, 48%, 100%, .9)",
-    "seriesColor": "hsla(210, 48%, 100%, .5)",
+    "textColor": "hsla(360, 80%, 100%, 1.0)",
+    "seriesColor": "hsla(360, 80%, 40%, 1.0)",
     "backgroundColor": "hsl(210, 48%, 43%)"
   },
   {
@@ -216,8 +216,8 @@
     "horizontal": false,
     "keyLabel": "term",
     "keySeries": "count",
-    "textColor": "hsla(210, 48%, 100%, .9)",
-    "seriesColor": "hsla(210, 48%, 100%, .5)",
+    "textColor": "hsla(360, 80%, 100%, 1.0)",
+    "seriesColor": "hsla(360, 80%, 40%, 1.0)",
     "backgroundColor": "hsl(210, 48%, 46%)"
   },
   {
@@ -233,8 +233,8 @@
     "horizontal": false,
     "keyLabel": "term",
     "keySeries": "count",
-    "textColor": "hsla(210, 48%, 100%, .9)",
-    "seriesColor": "hsla(210, 48%, 100%, .5)",
+    "textColor": "hsla(360, 80%, 100%, 1.0)",
+    "seriesColor": "hsla(360, 80%, 40%, 1.0)",
     "backgroundColor": "hsl(210, 48%, 49%)"
   }
 ]

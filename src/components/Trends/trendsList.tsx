@@ -21,7 +21,7 @@ const TrendsList = ({ jsonFile }) => {
           return <TrendsItem {...props} key={index} />;
         })
       ) : (
-        <div style={{ color: "white" }}>Data Fetch error in Page component</div>
+        <div style={{ color: "white" }}>Data Fetch error in TrendsList component</div>
       )}
     </>
   );

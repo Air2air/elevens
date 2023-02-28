@@ -1,10 +1,10 @@
 import Container from "components/Container/container";
-import EChart from "./echart";
+import ChartItem from "./chartItem";
 import {
   TrendsDescription,
   TrendsHeader,
   TrendsInner,
-  TrendsSource,
+  TrendsAttribution,
 } from "./trendsComponents";
 import parse from "html-react-parser";
 import TrendsStats from "./trendsStats";
@@ -22,8 +22,8 @@ const TrendsItem = (props) => {
             <div className="title">{props.title}</div>
             <TrendsStats {...props} />
           </TrendsHeader>
-          {props.chartData >= "" && <EChart {...props} />}
-          <TrendsSource>{props.source}</TrendsSource>
+          {props.chartData >= "" && <ChartItem {...props} />}
+          <TrendsAttribution>{props.source}</TrendsAttribution>
           <TrendsDescription>{descriptionParsed}</TrendsDescription>
         </TrendsInner>
       </Container>

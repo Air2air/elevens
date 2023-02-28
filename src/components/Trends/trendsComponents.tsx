@@ -62,7 +62,7 @@ export const TrendsHeader = styled.div`
   /* background: gold; */
 `;
 
-export const TrendsSource = styled.div`
+export const TrendsAttribution = styled.div`
   text-align: right;
   opacity: 0.5;
   color: ${COLOR_TEXT};

@@ -1,4 +1,4 @@
-import{s as i,B as a,i as e,p as o,q as s,T as n,m as t}from"./bannerComponents-d39a1a52.js";import{j as T,k as p,C as l}from"./index-b6dd9cfc.js";const r=i.div`
+import{s as i,B as a,i as e,p as o,q as s,T as n,m as t}from"./bannerComponents-62cc5090.js";import{k as T,l,C as p}from"./index-a4744e2e.js";const r=i.div`
   margin: 0 auto;
   z-index: +1;
   height: auto;
@@ -22,6 +22,6 @@ import{s as i,B as a,i as e,p as o,q as s,T as n,m as t}from"./bannerComponents-
     ${T};
   }
   @media (max-width: ${a}px) {
-    ${p};
+    ${l};
   }
-`,O=d=>t(l,{...d,children:t("div",{style:{height:400}})});export{O as C,r as a,x as b};
+`,O=d=>t(p,{...d,children:t("div",{style:{height:400}})});export{O as C,r as a,x as b};

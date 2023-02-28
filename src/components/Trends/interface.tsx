@@ -1,7 +1,7 @@
 export interface TrendsProps {
   id: number;
-  category: string;
-  subcategory: string;
+  title: string;
+  subtitle: string;
   description: string;
   height: number;
   dataKey?: string;
@@ -12,9 +12,9 @@ export interface TrendsProps {
   horizontal: boolean;
   keyLabel?: string;
   keySeries?: string;
-  term: string;
+  cap: string;
   time: string;
-  count?: string;
+  cagr:  string;
   textColor?: string;
   seriesColor?: string;
   backgroundColor?: string;
