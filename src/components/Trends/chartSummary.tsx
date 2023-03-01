@@ -1,9 +1,9 @@
 import ReactECharts from "echarts-for-react";
 import { useState, useEffect } from "react";
-import { BREAKPOINT, COLOR_CHART_BAR } from "styles/Constants";
+import { BREAKPOINT, COLOR_CHART_BAR, COLOR_GREEN } from "styles/Constants";
 import { FONT_FAMILY_CONDENSED } from "styles/Text";
 
-const ChartSummary = ({ data }) => {
+const ChartSummary = ({ data, xAxisType }) => {
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
@@ -18,15 +18,6 @@ using ReactECharts, render a chart from the following json object so that:
 2. the X axis shows either the cap_current values or cagr_current values.  This value is switched by the user with a button.
 */
 
-  const [xAxisType, setXAxisType] = useState("cap_current");
-
-  const handleCagrClick = () => {
-    setXAxisType("cagr_current");
-  };
-
-  const handleCapClick = () => {
-    setXAxisType("cap_current");
-  };
 
   const sortedData = data.sort((a, b) => a[xAxisType] - b[xAxisType]);
 
@@ -95,7 +86,7 @@ using ReactECharts, render a chart from the following json object so that:
         },
         showBackground: true,
         itemStyle: {
-          color: xAxisType === "cagr_current" ? "gold" : COLOR_CHART_BAR,
+          color: xAxisType === "cagr_current" ? COLOR_GREEN : COLOR_CHART_BAR,
         },
         backgroundStyle: {
           color: "rgba(255, 255, 255, 0.05)",
@@ -106,12 +97,7 @@ using ReactECharts, render a chart from the following json object so that:
 
   return (
     <>
-      <button onClick={handleCapClick} disabled={xAxisType === "cap_current"}>
-        Market Cap
-      </button>
-      <button onClick={handleCagrClick} disabled={xAxisType === "cagr_current"}>
-        CAGR
-      </button>
+
       <ReactECharts
         notMerge={true}
         lazyUpdate={true}

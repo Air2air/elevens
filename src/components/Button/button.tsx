@@ -1,6 +1,6 @@
 import { ButtonWrapper } from "./buttonComponents";
 
-export const Button = (props: { to: string; text: string }) => {
+export const Button = (props: { to?: string; text?: string }) => {
   return (
     <>
       <a href={props.to}>

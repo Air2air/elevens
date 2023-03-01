@@ -14,6 +14,7 @@ export const TEXT_OPACITY = 0.8;
 
 export const COLOR_CHART_BAR = "hsl(200, 44%, 44%)";
 
+
 // Themes
 export const COLOR_BLACK = "hsl(0, 0%, 0%)";
 export const COLOR_BASE = "hsl(0, 0%, 11%)";
@@ -31,10 +32,8 @@ export const COLOR_BLUE_1 = "hsl(213, 64%, 13%)";
 export const COLOR_BLUE_2 = "hsl(213, 64%, 15%)";
 export const COLOR_BLUE_TEXT = "hsl(213, 64%, 80%)";
 
-export const COLOR_GREEN = "hsl(174, 64%, 11%)";
-export const COLOR_GREEN_1 = "hsl(174, 64%, 13%)";
-export const COLOR_GREEN_2 = "hsl(174, 64%, 15%)";
-export const COLOR_GREEN_TEXT = "hsl(174, 64%, 80%)";
+export const COLOR_GREEN = "hsl(174, 44%, 31%)";
+
 
 export const COLOR_RED_1 = "hsl(0, 79%, 10%)";
 export const COLOR_RED_2 = "hsl(0, 79%, 12%)";
