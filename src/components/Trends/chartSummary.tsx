@@ -5,7 +5,6 @@ import { FONT_FAMILY_CONDENSED } from "styles/Text";
 
 const ChartSummary = ({ data }) => {
   const [width, setWidth] = useState(window.innerWidth);
-
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowResize);
@@ -13,11 +12,23 @@ const ChartSummary = ({ data }) => {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
-  const capAscending = [...data].sort((a, b) => a.cap - b.cap);
+  /*Todd Dunning
+using ReactECharts, render a chart from the following json object so that:
+1. the y axis shows the title value
+2. the X axis shows either the cap_current values or cagr_current values.  This value is switched by the user with a button.
+*/
 
-  //const cagrAscending = [...data].sort((a, b) => a.cagr - b.cagr);
+  const [xAxisType, setXAxisType] = useState("cap_current");
 
-  const chartDataSrc = capAscending;
+  const handleCagrClick = () => {
+    setXAxisType("cagr_current");
+  };
+
+  const handleCapClick = () => {
+    setXAxisType("cap_current");
+  };
+
+  const sortedData = data.sort((a, b) => a[xAxisType] - b[xAxisType]);
 
   const options = {
     grid: {
@@ -30,6 +41,10 @@ const ChartSummary = ({ data }) => {
     xAxis: {
       type: "value",
       show: false,
+      name:
+        xAxisType === "cap_current"
+          ? "Market Cap (in billions USD)"
+          : "CAGR (%)",
       axisLabel: {
         fontFamily: FONT_FAMILY_CONDENSED,
         fontSize: 17,
@@ -46,7 +61,7 @@ const ChartSummary = ({ data }) => {
     },
     yAxis: {
       type: "category",
-      data: chartDataSrc.map((item) => item.title),
+      data: sortedData.map((item) => item.title),
       nameLocation: "right",
       name: "",
       axisLabel: {
@@ -71,7 +86,7 @@ const ChartSummary = ({ data }) => {
         labelLine: false,
         name: "Market size (in billions of USD)",
         type: "bar",
-        data: chartDataSrc.map((item) => item.cap),
+        data: sortedData.map((item) => item[xAxisType]),
         label: {
           fontFamily: FONT_FAMILY_CONDENSED,
           fontSize: 17,
@@ -79,7 +94,9 @@ const ChartSummary = ({ data }) => {
           position: "inside",
         },
         showBackground: true,
-        itemStyle: { color: COLOR_CHART_BAR },
+        itemStyle: {
+          color: xAxisType === "cagr_current" ? "gold" : COLOR_CHART_BAR,
+        },
         backgroundStyle: {
           color: "rgba(255, 255, 255, 0.05)",
         },
@@ -88,14 +105,24 @@ const ChartSummary = ({ data }) => {
   };
 
   return (
-    <ReactECharts
-      option={options}
-      style={{
-        padding: width > BREAKPOINT ? "10px 0" : "4px 0",
-        height: "280px",
-        width: "100%",
-      }}
-    />
+    <>
+      <button onClick={handleCapClick} disabled={xAxisType === "cap_current"}>
+        Market Cap
+      </button>
+      <button onClick={handleCagrClick} disabled={xAxisType === "cagr_current"}>
+        CAGR
+      </button>
+      <ReactECharts
+        notMerge={true}
+        lazyUpdate={true}
+        option={options}
+        style={{
+          padding: width > BREAKPOINT ? "10px 0" : "4px 0",
+          height: "350px",
+          width: "100%",
+        }}
+      />
+    </>
   );
 };
 

@@ -6,8 +6,10 @@
     "title": "Machine Learning ",
     "description": "<p>As machine learning technology becomes more advanced and widely used in healthcare, startups that are developing innovative solutions using machine learning may be more likely to gain traction with customers and generate significant revenue.</p>",
     "source": "Deloitte, Frost & Sullivan, Tractica, Accenture",
-    "cap": 5.6,
-    "cagr": 44.1,
+    "cap_current": 31.3,
+    "cap_projected": 20.0,
+    "cagr_current": 44.1,
+    "cagr_projected": 20.0,
     "chartXAxisName": "Year",
     "chartYAxisName": "MarketCap USD",
     "chartData": [
@@ -50,8 +52,10 @@
     "title": "Natural Language Processing ",
     "description": "<p>As natural language processing technology continues to improve, there is potential for startups to develop machine learning-powered solutions that can accurately and efficiently extract and analyze data from unstructured sources such as medical records and research studies.</p>",
     "source": "Grand View, Market Research Future ",
-    "cap": 16,
-    "cagr": 22.5,
+    "cap_current": 16,
+    "cap_projected": 20.0,
+    "cagr_current": 22.5,
+    "cagr_projected": 20.0,
     "chartXAxisName": "Year",
     "chartYAxisName": "MarketCap USD",
     "chartData": [
@@ -94,8 +98,10 @@
     "title": "EHR Integration",
     "description": "<p>As electronic health records become more prevalent and sophisticated, startups that can leverage machine learning to analyze data from EHRs may have a competitive advantage.</p> ",
     "source": "Grand View, Journal of the American Medical Association",
-    "cap": 30.4,
-    "cagr": 6.8,
+    "cap_current": 30.4,
+    "cap_projected": 20.0,
+    "cagr_current": 5.4,
+    "cagr_projected": 20.0,
     "chartXAxisName": "Year",
     "chartYAxisName": "MarketCap USD",
     "chartData": [
@@ -146,10 +152,12 @@
     "backgroundColor": "hsl(200, 44%, 18%)",
     "seriesColor": "hsl(200, 44%, 14%)",
     "title": "Predictive Analytics",
-    "description": "<p>Machine learning algorithms are well-suited for predictive analytics in healthcare, and startups that can leverage this capability to develop tools for early disease detection, risk assessment, and treatment planning may be well-positioned for success.</p>",
+    "description": "<p>Machine learning algorithms are well-suited for predictive analytics in healthcare, and startups that can leverage this cap_currentability to develop tools for early disease detection, risk assessment, and treatment planning may be well-positioned for success.</p>",
     "source": "Journal of Medical Systems",
-    "cap": 4.2,
-    "cagr": 23.2,
+    "cap_current": 4.2,
+    "cap_projected": 20.0,
+    "cagr_current": 23.2,
+    "cagr_projected": 20.0,
     "chartXAxisName": "Year",
     "chartYAxisName": "MarketCap USD",
     "chartData": [
@@ -193,8 +201,10 @@
     "title": "Wearables and other IoT devices",
     "description": "<p>The use of wearables and other IoT devices is increasing in healthcare, and startups that can develop machine learning-powered solutions that can make sense of this data may be well-positioned for success.</p>",
     "source": "Journal of Medical Internet Research, MarketsandMarkets ",
-    "cap": 22,
-    "cagr": 19.6,
+    "cap_current": 22,
+    "cap_projected": 20.0,
+    "cagr_current": 19.6,
+    "cagr_projected": 20.0,
     "chartXAxisName": "Year",
     "chartYAxisName": "MarketCap USD",
     "chartData": [
@@ -237,8 +247,82 @@
     "title": "Blockchain security and sharing",
     "description": "<p>As the need for secure and transparent sharing of healthcare data increases, startups that can leverage blockchain technology and machine learning to develop secure and efficient data sharing solutions may have a competitive advantage.</p>",
     "source": "Allied Market Research, Deloitte",
-    "cap": 1.1,
-    "cagr": 63.0,
+    "cap_current": 1.1,
+    "cap_projected": 20.0,
+    "cagr_current": 63.0,
+    "cagr_projected": 20.0,
+    "chartXAxisName": "Year",
+    "chartYAxisName": "MarketCap USD",
+    "chartData": [
+      {
+        "id": 6,
+        "key": "2019",
+        "value": 0.2
+      },
+      {
+        "id": 7,
+        "key": "2020",
+        "value": 0.4
+      },
+      {
+        "id": 8,
+        "key": "2021",
+        "value": 0.6
+      },
+      {
+        "id": 9,
+        "key": "2022",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "backgroundColor": "hsl(200, 44%, 26%)",
+    "seriesColor": "hsl(200, 44%, 14%)",
+    "title": "Telemedicine",
+    "description": "<p>Needs description</p>",
+    "source": "Allied Market Research, Deloitte",
+    "cap_current": 185.6,
+    "cap_projected": 20.0,
+    "cagr_current": 14.9,
+    "cagr_projected": 20.0,
+    "chartXAxisName": "Year",
+    "chartYAxisName": "MarketCap USD",
+    "chartData": [
+      {
+        "id": 6,
+        "key": "2019",
+        "value": 0.2
+      },
+      {
+        "id": 7,
+        "key": "2020",
+        "value": 0.4
+      },
+      {
+        "id": 8,
+        "key": "2021",
+        "value": 0.6
+      },
+      {
+        "id": 9,
+        "key": "2022",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "backgroundColor": "hsl(200, 44%, 26%)",
+    "seriesColor": "hsl(200, 44%, 14%)",
+    "title": "Healthcare Analytics",
+    "description": "<p>Needs description</p>",
+    "source": "Allied Market Research, Deloitte",
+    "cap_current": 84.2,
+    "cap_projected": 20.0,
+    "cagr_current": 26,
+    "cagr_projected": 20.0,
     "chartXAxisName": "Year",
     "chartYAxisName": "MarketCap USD",
     "chartData": [
@@ -265,8 +349,3 @@
     ]
   }
 ]
-
-
-
-
-

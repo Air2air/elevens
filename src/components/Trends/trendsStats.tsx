@@ -10,14 +10,14 @@ const TrendsStats = (props) => {
         <TrendsCap>
           <Legend>Market Size</Legend>
           <Value>
-            {props.cap}
+            {props.cap_current}
             <span>b</span>
           </Value>
         </TrendsCap>
         <TrendsCagr>
           <Legend>CAGR</Legend>
           <Value>
-            {props.cagr}
+            {props.cagr_current}
             <span>%</span>
           </Value>
         </TrendsCagr>
