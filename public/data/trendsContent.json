@@ -1,14 +1,14 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "backgroundColor": "hsl(200, 44%, 12%)",
     "seriesColor": "hsl(200, 44%, 14%)",
     "title": "Machine Learning ",
-    "description": "<p>As machine learning technology becomes more advanced and widely used in healthcare, startups that are developing innovative solutions using machine learning may be more likely to gain traction with customers and generate significant revenue.</p>",
+    "description": "<p>As machine learning technology becomes more advanced and widely used in healthcare, startups that are developing innovative solutions using machine learning may be more likely to gain traction with customers and generate significant revenue.</p><p>The global AI in healthcare market size was valued at $2.1 billion in 2018 and is expected to reach $31.3 billion by 2025, growing at a CAGR of 41.5% from 2019 to 2025.</p>",
     "source": "Deloitte, Frost & Sullivan, Tractica, Accenture",
-    "cap_current": 31.3,
-    "cap_projected": 20.0,
-    "cagr_current": 44.1,
+    "cap_current": 21.2,
+    "cap_projected": 31.3,
+    "cagr_current": 41.5,
     "cagr_projected": 20.0,
     "chartXAxisName": "Year",
     "chartYAxisName": "MarketCap USD",
@@ -46,7 +46,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 1,
     "backgroundColor": "hsl(200, 44%, 14%)",
     "seriesColor": "hsl(200, 44%, 14%)",
     "title": "Natural Language Processing ",
@@ -92,11 +92,11 @@
     ]
   },
   {
-    "id": 3,
+    "id": 2,
     "backgroundColor": "hsl(200, 44%, 16%)",
     "seriesColor": "hsl(200, 44%, 14%)",
     "title": "EHR Integration",
-    "description": "<p>As electronic health records become more prevalent and sophisticated, startups that can leverage machine learning to analyze data from EHRs may have a competitive advantage.</p> ",
+    "description": "<p>As electronic health records become more prevalent and sophisticated, startups that can leverage machine learning to analyze data from EHRs may have a competitive advantage.</p><p>The global EHR market size was valued at $26.2 billion in 2018 and is expected to reach $40.4 billion by 2025, growing at a CAGR of 5.4% from 2019 to 2025.</p>",
     "source": "Grand View, Journal of the American Medical Association",
     "cap_current": 30.4,
     "cap_projected": 20.0,
@@ -148,7 +148,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 3,
     "backgroundColor": "hsl(200, 44%, 18%)",
     "seriesColor": "hsl(200, 44%, 14%)",
     "title": "Predictive Analytics",
@@ -195,15 +195,15 @@
   },
 
   {
-    "id": 6,
+    "id": 4,
     "backgroundColor": "hsl(200, 44%, 22%)",
     "seriesColor": "hsl(200, 44%, 14%)",
-    "title": "Wearables and other IoT devices",
-    "description": "<p>The use of wearables and other IoT devices is increasing in healthcare, and startups that can develop machine learning-powered solutions that can make sense of this data may be well-positioned for success.</p>",
+    "title": "Wearable Medical Devices",
+    "description": "<p>The use of wearables and other IoT devices is increasing in healthcare, and startups that can develop machine learning-powered solutions that can make sense of this data may be well-positioned for success.</p><p>The global wearable medical devices market size was valued at $12.6 billion in 2018 and is expected to reach $98.6 billion by 2025, growing at a CAGR of 29.0% from 2019 to 2025.</p>",
     "source": "Journal of Medical Internet Research, MarketsandMarkets ",
-    "cap_current": 22,
-    "cap_projected": 20.0,
-    "cagr_current": 19.6,
+    "cap_current": 67.3,
+    "cap_projected": 84.2,
+    "cagr_current": 26.3,
     "cagr_projected": 20.0,
     "chartXAxisName": "Year",
     "chartYAxisName": "MarketCap USD",
@@ -241,7 +241,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 5,
     "backgroundColor": "hsl(200, 44%, 24%)",
     "seriesColor": "hsl(200, 44%, 14%)",
     "title": "Blockchain security and sharing",
@@ -277,13 +277,13 @@
     ]
   },
   {
-    "id": 8,
-    "backgroundColor": "hsl(200, 44%, 26%)",
+    "id": 6,
+    "backgroundColor": "hsl(200, 44%, 12%)",
     "seriesColor": "hsl(200, 44%, 14%)",
     "title": "Telemedicine",
-    "description": "<p>Needs description</p>",
+    "description": "<p>The global telemedicine market size was valued at $34.28 billion in 2018 and is expected to reach $185.6 billion by 2026, growing at a CAGR of 14.9% from 2019 to 2026.</p>",
     "source": "Allied Market Research, Deloitte",
-    "cap_current": 185.6,
+    "cap_current": 50.6,
     "cap_projected": 20.0,
     "cagr_current": 14.9,
     "cagr_projected": 20.0,
@@ -313,15 +313,123 @@
     ]
   },
   {
-    "id": 9,
-    "backgroundColor": "hsl(200, 44%, 26%)",
+    "id": 7,
+    "backgroundColor": "hsl(200, 44%, 14%)",
     "seriesColor": "hsl(200, 44%, 14%)",
     "title": "Healthcare Analytics",
-    "description": "<p>Needs description</p>",
+    "description": "<p>The global healthcare analytics market size was valued at $13.74 billion in 2018 and is expected to reach $84.2 billion by 2027, growing at a CAGR of 26.0% from 2020 to 2027.</p>",
     "source": "Allied Market Research, Deloitte",
-    "cap_current": 84.2,
-    "cap_projected": 20.0,
+    "cap_current": 53.2,
+    "cap_projected": 84.2,
     "cagr_current": 26,
+    "cagr_projected": 20.0,
+    "chartXAxisName": "Year",
+    "chartYAxisName": "MarketCap USD",
+    "chartData": [
+      {
+        "id": 6,
+        "key": "2019",
+        "value": 0.2
+      },
+      {
+        "id": 7,
+        "key": "2020",
+        "value": 0.4
+      },
+      {
+        "id": 8,
+        "key": "2021",
+        "value": 0.6
+      },
+      {
+        "id": 9,
+        "key": "2022",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "backgroundColor": "hsl(200, 44%, 16%)",
+    "seriesColor": "hsl(200, 44%, 14%)",
+    "title": "Medical Imaging",
+    "description": "<p>The global medical imaging market size was valued at $33.2 billion in 2018 and is expected to reach $43.3 billion by 2025, growing at a CAGR of 3.6% from 2019 to 2025.</p>",
+    "source": "Allied Market Research, Deloitte",
+    "cap_current": 40.2,
+    "cap_projected": 43.0,
+    "cagr_current": 3.6,
+    "cagr_projected": 20.0,
+    "chartXAxisName": "Year",
+    "chartYAxisName": "MarketCap USD",
+    "chartData": [
+      {
+        "id": 6,
+        "key": "2019",
+        "value": 0.2
+      },
+      {
+        "id": 7,
+        "key": "2020",
+        "value": 0.4
+      },
+      {
+        "id": 8,
+        "key": "2021",
+        "value": 0.6
+      },
+      {
+        "id": 9,
+        "key": "2022",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "backgroundColor": "hsl(200, 44%, 18%)",
+    "seriesColor": "hsl(200, 44%, 14%)",
+    "title": "mHealth",
+    "description": "<p>The global mHealth market size was valued at $28.3 billion in 2018 and is expected to reach $249.4 billion by 2025, growing at a CAGR of 34.0% from 2019 to 2025.</p>",
+    "source": "Allied Market Research, Deloitte",
+    "cap_current": 140.2,
+    "cap_projected": 249.4,
+    "cagr_current": 34,
+    "cagr_projected": 20.0,
+    "chartXAxisName": "Year",
+    "chartYAxisName": "MarketCap USD",
+    "chartData": [
+      {
+        "id": 6,
+        "key": "2019",
+        "value": 0.2
+      },
+      {
+        "id": 7,
+        "key": "2020",
+        "value": 0.4
+      },
+      {
+        "id": 8,
+        "key": "2021",
+        "value": 0.6
+      },
+      {
+        "id": 9,
+        "key": "2022",
+        "value": 1.1
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "backgroundColor": "hsl(200, 44%, 20%)",
+    "seriesColor": "hsl(200, 44%, 14%)",
+    "title": "Personalized Medicine",
+    "description": "<p>The global personalized medicine market size was valued at $92.5 billion in 2018 and is expected to reach $264.8 billion by 2027, growing at a CAGR of 11.8% from 2020 to 2027</p>",
+    "source": "Allied Market Research, Deloitte",
+    "cap_current": 161.2,
+    "cap_projected": 264.8,
+    "cagr_current": 11.8,
     "cagr_projected": 20.0,
     "chartXAxisName": "Year",
     "chartYAxisName": "MarketCap USD",

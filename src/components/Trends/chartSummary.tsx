@@ -104,7 +104,7 @@ using ReactECharts, render a chart from the following json object so that:
         option={options}
         style={{
           padding: width > BREAKPOINT ? "10px 0" : "4px 0",
-          height: "350px",
+          height: "460px",
           width: "100%",
         }}
       />
