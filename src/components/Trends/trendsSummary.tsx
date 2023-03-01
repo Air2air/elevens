@@ -3,7 +3,7 @@ import { ChartSkeleton } from "components/Chart/chartComponents";
 import Container from "components/Container/container";
 import { FetchData } from "fetch/fetch";
 import { useState } from "react";
-import { COLOR_CHART_BAR, COLOR_GREEN } from "styles/Colors";
+import { COLOR_BASE_6, COLOR_CHART_BAR, COLOR_GREEN } from "styles/Colors";
 import { ButtonDesktop } from "./chartButtons";
 import ChartSummary from "./chartSummary";
 import { TrendsInner, TrendsHeader } from "./trendsComponents";
@@ -39,7 +39,7 @@ const TrendsSummary = ({ jsonFile }) => {
             <ButtonDesktop
               onClick={handleCapClick}
               disabled={xAxisType === "cap_current"}
-              buttonColor={COLOR_CHART_BAR}
+              buttonColor={xAxisType === "cap_current" ? COLOR_CHART_BAR: COLOR_BASE_6  }
             >
               Market Cap
             </ButtonDesktop>
@@ -47,7 +47,7 @@ const TrendsSummary = ({ jsonFile }) => {
             <ButtonDesktop
               onClick={handleCagrClick}
               disabled={xAxisType === "cagr_current"}
-              buttonColor={COLOR_GREEN}
+              buttonColor={xAxisType === "cagr_current" ? COLOR_GREEN: COLOR_BASE_6  }
             >
               CAGR
             </ButtonDesktop></div>

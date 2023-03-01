@@ -8,12 +8,13 @@ const buttonWidthMobile = "100%";
 export const BUTTON_TEXT_COLOR = "hsl(0, 0%, 90%)";
 export const BUTTON_COLOR = "hsl(0, 86%, 36%)";
 export const BUTTON_COLOR_HOVER = "hsl(0, 86%, 46%)";
-export const BUTTON_COLOR_GRAY =" hsl(0, 0%, 32%)";
+// export const BUTTON_COLOR_GRAY =" hsl(0, 0%, 52%)";
 export const BUTTON_COLOR_HOVER_GRAY = "rgba(50, 50, 50, 0.4)";
 
 import styled from "styled-components";
 import {
   BREAKPOINT,
+  COLOR_BASE_6,
   FONT_BUTTON_DESKTOP,
   FONT_BUTTON_MOBILE,
   // FONT_CONDENSED_DESKTOP,
@@ -39,12 +40,12 @@ export const ButtonDesktop = styled.button<{ buttonColor?: string }>`
         ? BUTTON_COLOR_HOVER_GRAY
         : props.buttonColor};
 
-  &:hover {
+  /* &:hover {
     background: ${(props: { buttonColor?: string }) =>
       props.buttonColor === "gray"
         ? BUTTON_COLOR_HOVER_GRAY
-        : BUTTON_COLOR_GRAY};
-  }
+        : COLOR_BASE_6};
+  } */
   min-width: ${buttonWidthDesktop};
   @media (min-width: ${BREAKPOINT}px) {
     display: inline-flex;
