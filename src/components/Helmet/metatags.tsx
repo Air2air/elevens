@@ -10,7 +10,7 @@ const Metatags = (props: {
 }) => {
   const location = useLocation();
 
-  const currentUrl = "https://www.elevens.ai/" + location.pathname;
+  const currentUrl = "https://www.elevens.ai" + location.pathname;
 
   const quote =
     props.quote !== "" || props.quote !== undefined
