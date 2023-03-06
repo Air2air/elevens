@@ -2,12 +2,16 @@ import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 
 const Metatags = (props: {
-  quote?: string;
   title?: string;
   image?: string;
   description?: string;
   hashtag?: string;
+  quote?: string;
 }) => {
+
+  const currentTimestamp = new Date(Date.now()).toISOString();
+
+
   const location = useLocation();
 
   const currentUrl = "https://www.elevens.ai" + location.pathname;
@@ -17,7 +21,10 @@ const Metatags = (props: {
       ? props.quote
       : "Faster liquidity for Health AI ventures";
 
-  const title = props.image !== "" || props.image !== undefined ? props.title : "Elevens.ai";
+  const title =
+    props.title !== "" || props.title !== undefined
+      ? props.title
+      : "Elevens.ai";
 
   const image =
     props.image !== "" || props.image !== undefined
@@ -40,7 +47,6 @@ const Metatags = (props: {
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="csrf_token" content="" />
-
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -51,40 +57,47 @@ const Metatags = (props: {
       />
       <meta name="msapplication-config" content="/icons/browserconfig.xml" />
       <meta name="msapplication-TileColor" content="#da532c" />
-      <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png" />
+      <meta
+        name="msapplication-TileImage"
+        content="/icons/ms-icon-144x144.png"
+      />
       <meta name="theme-color" content="#ffffff" />
 
       <meta name="_token" content="" />
       <meta name="robots" content="noodp" />
 
-      <meta property="description" content={description} />
-      <meta property="image" content={image} />
-      <meta property="quote" content={quote} />
       <meta property="title" content={title} />
-      <meta property="type" content="website" />
-      <meta property="url" content={currentUrl} />
+      <meta property="og:title" content={title} />
+      <meta name="twitter:title" content={title} />
 
+      <meta property="description" content={description} />
       <meta property="og:description" content={description} />
-      <meta property="og:hashtag" content={hashtag} />
+      <meta name="twitter:description" content={description} />
+
+      <meta property="image" content={image} />
       <meta property="og:image" content={image} />
       <meta property="og:image:type" content="image/webp" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="628" />
-      <meta property="og:image:type" content="image/*"  />
-      <meta property="og:locale" content="en_US" />
-      <meta property="og:quote" content={quote} />
-      <meta property="og:site_name" content="Elevens.ai" />
-      <meta property="og:title" content={title} />
-      <meta property="og:type" content="article" />
-      <meta property="og:url" content={currentUrl} />
-
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="Elevens.ai"  />
-      <meta name="twitter:title" content={title}  />
-      <meta name="twitter:description" content={description} />
+      <meta property="og:image:type" content="image/webp" />
       <meta name="twitter:image" content={image} />
       <meta name="twitter:image:alt" content={title} />
+
+      <meta property="quote" content={quote} />
+      <meta property="og:article:published_time" content={currentTimestamp} />
+
+      <meta property="url" content={currentUrl} />
+      <meta property="og:url" content={currentUrl} />
+
+      <meta property="og:site_name" content="Elevens.ai" />
       <meta name="twitter:site" content="@elevens_ai" />
+
+      <meta property="og:type" content="article" />
+      <meta property="type" content="article" />
+
+      <meta property="og:locale" content="en_US" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content="Elevens.ai" />
 
       <link rel="manifest" href="/icons/site.webmanifest" />
       <link
@@ -116,8 +129,6 @@ const Metatags = (props: {
         color="#5bbad5"
       />
       <link rel="shortcut icon" href="/icons/favicon.ico" />
-
-
     </Helmet>
   );
 };
