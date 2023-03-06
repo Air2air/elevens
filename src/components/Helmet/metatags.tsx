@@ -17,7 +17,7 @@ const Metatags = (props: {
       ? props.quote
       : "Faster liquidity for Health AI ventures";
 
-  const title = props.title !== undefined ? props.title : "Elevens.ai";
+  const title = props.image !== "" || props.image !== undefined ? props.title : "Elevens.ai";
 
   const image =
     props.image !== "" || props.image !== undefined
@@ -79,8 +79,12 @@ const Metatags = (props: {
       <meta property="og:url" content={currentUrl} />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:label1" content="Est. reading time" />
-      <meta name="twitter:data1" content="5 minutes" />
+      <meta name="twitter:creator" content="Elevens.ai"  />
+      <meta name="twitter:title" content={title}  />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image:alt" content={title} />
+      <meta name="twitter:site" content={currentUrl}  />
 
       <link rel="manifest" href="/icons/site.webmanifest" />
       <link
