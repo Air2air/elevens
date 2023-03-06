@@ -12,12 +12,6 @@ const ChartSummary = ({ data, xAxisType }) => {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
-  /*Todd Dunning
-using ReactECharts, render a chart from the following json object so that:
-1. the y axis shows the title value
-2. the X axis shows either the cap_current values or cagr_current values.  This value is switched by the user with a button.
-*/
-
 
   const sortedData = data.sort((a, b) => a[xAxisType] - b[xAxisType]);
 

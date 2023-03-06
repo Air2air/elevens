@@ -1,6 +1,7 @@
 import { QueryClient, QueryClientProvider } from "react-query";
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import { Footer } from "./components/Footer/footer";
 import { Header } from "./components/Header/header";
 import { dataRoutes } from "./routes/routes";
@@ -23,19 +24,21 @@ const App = () => {
 
   return (
     <>
-      <QueryClientProvider client={queryClient}>
-        <Header />
-        <Suspense fallback={<LoadingSkeleton />}>
-          <FadeTransition>
-            <Routes>
-              {dataRoutes.map(({ path, element }) => (
-                <Route key={path} path={path} element={element} />
-              ))}
-            </Routes>
-          </FadeTransition>
-        </Suspense>
-        <Footer backgroundColor={5} />
-      </QueryClientProvider>
+      <HelmetProvider>
+        <QueryClientProvider client={queryClient}>
+          <Header />
+          <Suspense fallback={<LoadingSkeleton />}>
+            <FadeTransition>
+              <Routes>
+                {dataRoutes.map(({ path, element }) => (
+                  <Route key={path} path={path} element={element} />
+                ))}
+              </Routes>
+            </FadeTransition>
+          </Suspense>
+          <Footer backgroundColor={5} />
+        </QueryClientProvider>
+      </HelmetProvider>
     </>
   );
 };

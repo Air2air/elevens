@@ -1,4 +1,4 @@
-import{s as e,B as t,y as E,z as N,i as x,p as T,A as f,q as w,T as b,r as s,m as n,n as B}from"./bannerComponents-62cc5090.js";import{F as D,c as I,d as y,e as C,f as H,g as R,h as v}from"./index-a4744e2e.js";const d=40,A="250px",S="100%",r="hsl(0, 0%, 90%)",h="hsl(0, 86%, 36%)",l="hsl(0, 86%, 46%)",g="rgba(0, 0, 0, 0.4)",_="rgba(50, 50, 50, 0.4)",K=e.div`
+import{s as e,B as t,z as E,A as N,i as x,p as T,D as f,q as w,T as b,r as s,m as n,n as B}from"./bannerComponents-ace7d953.js";import{F as D,c as I,d as C,e as H,f as y,g as R,h as v}from"./index-24876990.js";const d=40,A="250px",S="100%",r="hsl(0, 0%, 90%)",h="hsl(0, 86%, 36%)",l="hsl(0, 86%, 46%)",g="rgba(0, 0, 0, 0.4)",_="rgba(50, 50, 50, 0.4)",K=e.div`
   ${D};
   color: ${r};
   padding: 0 16px;
@@ -40,7 +40,7 @@ import{s as e,B as t,y as E,z as N,i as x,p as T,A as f,q as w,T as b,r as s,m a
     display: none;
   }
 `,j=e.div`
-  ${y};
+  ${C};
   height: ${d}px;
   color: ${r};
   align-items: center;
@@ -93,10 +93,10 @@ import{s as e,B as t,y as E,z as N,i as x,p as T,A as f,q as w,T as b,r as s,m a
   color: ${f};
   text-shadow: 0 0 4px #000;
   @media (min-width: ${t}px) {
-    ${C}
+    ${H}
   }
   @media (max-width: ${t}px) {
-    ${H}
+    ${y}
   }
 `,U=e.div`
   display: flex;

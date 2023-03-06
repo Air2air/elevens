@@ -9,6 +9,7 @@ import {
 import parse from "html-react-parser";
 import TrendsStats from "./trendsStats";
 
+
 const TrendsItem = (props) => {
   const descriptionParsed = props.description
     ? parse(props.description)
@@ -25,6 +26,7 @@ const TrendsItem = (props) => {
           {props.chartData >= "" && <ChartItem {...props} />}
           <TrendsAttribution>{props.source}</TrendsAttribution>
           <TrendsDescription>{descriptionParsed}</TrendsDescription>
+
         </TrendsInner>
       </Container>
     </>

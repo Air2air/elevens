@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-
-
 export const FetchData = ({ file }) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [data, setData] = useState<any>(null);
