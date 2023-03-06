@@ -1,56 +1,60 @@
-
 import { useEffect, useState } from "react";
 import {
+  HeadingContainer,
   TitleContainer,
   TitleText,
   SubheadContainer,
   SubheadText,
-  HeadingContainer,
 } from "./headingComponents";
 
-interface Data {
+interface Heading {
   id: number;
   title: string;
   subhead: string;
 }
-
 const Heading = ({ jsonFile }) => {
-  const [data, setData] = useState<Data[]>([]);
-  const [index, setIndex] = useState(0);
+  const [headings, setHeadings] = useState<Heading[]>([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch(jsonFile);
-      const jsonData = await response.json();
-      setData(jsonData);
-    };
-    fetchData();
+    fetch(jsonFile)
+      .then((res) => res.json())
+      .then((data) => setHeadings(data.headings))
+      .catch((error) =>
+        console.error("Error fetching data from JSON file:", error)
+      );
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((i) => (i + 1) % data.length);
-    }, 6000);
-    return () => clearInterval(interval);
-  }, [data]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  if (!data.length) {
-    return <HeadingContainer />;
-  }
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % headings.length);
+    }, 6000);
+    return () => clearInterval(intervalId);
+  }, [headings]);
 
   return (
-    <HeadingContainer key={index}>
-      <TitleContainer>
-        <TitleText className="animate__animated animate__fadeInDown">
-          {data[index].title}
-        </TitleText>
-      </TitleContainer>
-      <SubheadContainer>
-        <SubheadText className="animate__animated animate__fadeInUp animate__delay-1s">
-          {data[index].subhead}
-        </SubheadText>
-      </SubheadContainer>
-    </HeadingContainer>
+    <>
+      {headings.map((heading, index) => (
+        <HeadingContainer
+          key={heading.id}
+          style={{
+            display: index === currentIndex ? "block" : "none",
+          }}
+        >
+          <TitleContainer>
+            <TitleText className="animate__animated animate__fadeInDown">
+              {heading.title}
+            </TitleText>
+          </TitleContainer>
+          <SubheadContainer>
+            <SubheadText className="animate__animated animate__fadeInUp animate__delay-1s">
+              {heading.subhead}
+            </SubheadText>
+          </SubheadContainer>
+        </HeadingContainer>
+      ))}
+    </>
   );
 };
 

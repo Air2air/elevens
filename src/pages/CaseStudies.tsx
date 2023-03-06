@@ -13,7 +13,7 @@ const CaseStudiesPage = () => {
         overlayOpacity={0.4}
         overlayColor={1}
       />
-      <Heading jsonFile="/data/casestudiesHeading.json" />
+      {/* <Heading jsonFile="/data/casestudiesHeading.json" /> */}
       <Spacer height={40} backgroundColor={2} />
       <RowButton buttonTo="/markets" buttonText="Markets" backgroundColor={2} />
       <Spacer height={40} backgroundColor={2} />
