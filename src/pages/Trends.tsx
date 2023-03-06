@@ -8,7 +8,7 @@ const TrendsPage = () => {
     <>
       <Metatags
         title="Healthcare Tech Trends"
-        quote="Elevens.ai Healthcare tech trends report"
+        quote="Elevens.ai healthcare tech sectors trends"
         description="Elevens.ai is a data-driven, AI-powered platform that helps you make better decisions about your business. We provide you with the tools to make better decisions, faster."
         image="/images/social/trends.webp"
       />

@@ -22,7 +22,7 @@ const Metatags = (props: {
   const image =
     props.image !== "" || props.image !== undefined
       ? props.image
-      : "/images/social/social.webp";
+      : "/images/social/default.webp";
 
   const description =
     props.description !== "" || props.description !== undefined
@@ -45,7 +45,10 @@ const Metatags = (props: {
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
-
+      <meta
+        name="robots"
+        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      />
       <meta name="msapplication-config" content="/icons/browserconfig.xml" />
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png" />
@@ -110,10 +113,7 @@ const Metatags = (props: {
       />
       <link rel="shortcut icon" href="/icons/favicon.ico" />
 
-      <meta
-        name="robots"
-        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-      />
+
     </Helmet>
   );
 };
