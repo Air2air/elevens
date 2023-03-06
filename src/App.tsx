@@ -25,7 +25,6 @@ const App = () => {
   return (
     <>
       <HelmetProvider>
-
         <QueryClientProvider client={queryClient}>
           <Header />
           <Suspense fallback={<LoadingSkeleton />}>
