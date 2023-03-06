@@ -57,7 +57,7 @@ const Metatags = (props: {
       <meta name="_token" content="" />
       <meta name="robots" content="noodp" />
 
-      <meta name="description" content={description} />
+      <meta property="description" content={description} />
       <meta property="image" content={image} />
       <meta property="quote" content={quote} />
       <meta property="title" content={title} />
@@ -70,7 +70,7 @@ const Metatags = (props: {
       <meta property="og:image:type" content="image/webp" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="628" />
-      <meta content="image/*" property="og:image:type" />
+      <meta property="og:image:type" content="image/*"  />
       <meta property="og:locale" content="en_US" />
       <meta property="og:quote" content={quote} />
       <meta property="og:site_name" content="Elevens.ai" />
@@ -84,7 +84,7 @@ const Metatags = (props: {
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
       <meta name="twitter:image:alt" content={title} />
-      <meta name="twitter:site" content={currentUrl}  />
+      <meta name="twitter:site" content="@elevens_ai" />
 
       <link rel="manifest" href="/icons/site.webmanifest" />
       <link
