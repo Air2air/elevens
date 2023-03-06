@@ -16,20 +16,20 @@ const WhatWeDoChart = ({ jsonFile }) => {
   }
   return (
     <>
-      {data && data.length > 0 ? (
+      {data && data.chart.length > 0 ? (
         <Container backgroundColor={3}>
           <ChartSection>
             <ChartWrapper>
-              {data.map((props, index) => {
+              {data.chart.map((props, index) => {
                 return (
                   <ColumnWhatWeDo
-                  key={props.id}
-                  index={index}
-                  title={props.title}
-                  label={props.label}
-                  value={props.value} 
-                  backgroundColor={props.backgroundColor}
-                />
+                    key={props.id}
+                    index={index}
+                    title={props.title}
+                    label={props.label}
+                    value={props.value}
+                    backgroundColor={props.backgroundColor}
+                  />
                 );
               })}
             </ChartWrapper>
@@ -41,6 +41,5 @@ const WhatWeDoChart = ({ jsonFile }) => {
     </>
   );
 };
-
 
 export default WhatWeDoChart;

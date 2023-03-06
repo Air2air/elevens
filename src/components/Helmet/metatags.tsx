@@ -1,42 +1,43 @@
+import { FetchData } from "fetch/fetch";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 
-const Metatags = (props: {
-  title?: string;
-  image?: string;
-  description?: string;
-  hashtag?: string;
-  quote?: string;
-}) => {
+const Metatags = ({ jsonFile }) => {
+  const { data, loading, error } = FetchData({
+    file: jsonFile,
+  });
+  if (loading) {
+    return <div>Loading</div>;
+  }
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
 
   const currentTimestamp = new Date(Date.now()).toISOString();
-
 
   const location = useLocation();
 
   const currentUrl = "https://www.elevens.ai" + location.pathname;
 
   const quote =
-    props.quote !== "" || props.quote !== undefined
-      ? props.quote
+    data.page.quote !== "" || data.page.quote !== undefined
+      ? data.page.quote
       : "Faster liquidity for Health AI ventures";
 
   const title =
-    props.title !== "" || props.title !== undefined
-      ? props.title
+    data.page.title !== "" || data.page.title !== undefined
+      ? data.page.title
       : "Elevens.ai";
 
   const image =
-    props.image !== "" || props.image !== undefined
-      ? props.image
+    data.page.image !== "" || data.page.image !== undefined
+      ? data.page.image
       : "/images/social/default.webp";
 
   const description =
-    props.description !== "" || props.description !== undefined
-      ? props.description
+    data.page.description !== "" || data.page.description !== undefined
+      ? data.page.description
       : "Reduce your timeline and slash dilution, risk and time to liquidity.  We cut your timeline to liquidity with world class technical and business experts.  Reducing risk, dilution and time, getting you to the goal line for a fraction of the cost.";
-
-
 
   return (
     <Helmet>

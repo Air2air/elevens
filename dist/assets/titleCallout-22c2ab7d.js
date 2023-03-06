@@ -1,4 +1,4 @@
-import{s as o,K as e,B as l,k as a,l as c,j as i}from"./index-230bb9f9.js";const s=t=>i(d,{children:i(n,{color:t.color,children:t.title})}),d=o.div`
+import{s as o,K as e,B as l,k as a,l as c,j as i}from"./index-bd0181d7.js";const s=t=>i(d,{children:i(n,{color:t.color,children:t.title})}),d=o.div`
   text-align: left;
   width: 100%;
   min-height: 50px;

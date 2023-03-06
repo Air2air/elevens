@@ -28,11 +28,11 @@ const MarketsChart = ({ jsonFile }) => {
   }
   return (
     <>
-      {data && data.length > 0 ? (
+      {data && data.chart.length > 0 ? (
         <Container backgroundColor={1}>
           <ChartSection>
             <ChartWrapper>
-              {data.map((item, index) => {
+              {data.chart.map((item, index) => {
                 return (
                   <BarOuter key={index}>
                     <BarInner

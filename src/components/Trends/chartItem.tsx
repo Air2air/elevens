@@ -83,10 +83,7 @@ const ChartItem = (props) => {
         },
       },
     ],
-    // tooltip: {
-    //   show: false,
-    //   trigger: "axis",
-    // },
+
   };
 
   return (

@@ -1,6 +1,6 @@
 import { ChartSkeleton } from "components/Chart/chartComponents";
 import { FetchData } from "fetch/fetch";
-import { TrendsProps } from "./interface";
+// import { TrendsProps } from "./interface";
 import TrendsItem from "./trendsItem";
 
 const TrendsList = ({ jsonFile }) => {
@@ -14,10 +14,13 @@ const TrendsList = ({ jsonFile }) => {
     return <div>Error: {error.message}</div>;
   }
 
+  console.log(data); // Check if data is being received as expected
+  console.log(data.content); // Check if data.content exists
+  
   return (
     <>
-      {data && data.length > 0 ? (
-        data.map((props: TrendsProps, index) => {
+      {data && data.content && data.content.length > 0 ? (
+        data.content.map((props, index) => {
           return <TrendsItem {...props} key={index} />;
         })
       ) : (
@@ -25,6 +28,7 @@ const TrendsList = ({ jsonFile }) => {
       )}
     </>
   );
+  
 };
 
 export default TrendsList;

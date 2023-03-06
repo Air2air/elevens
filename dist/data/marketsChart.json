@@ -1,5 +1,6 @@
-[
-  {
+{
+  "chart": [
+    {
     "id": 1,
     "label": "HEALTHTECH",
     "height": 20,
@@ -28,3 +29,4 @@
     "backgroundColor": "hsl(2, 68%, 15%)"
   }
 ]
+}

@@ -50,7 +50,7 @@ export const ColumnHome = (props: any) => {
 
   return (
     <ChartWrapper style={{ width: columnWidth }}>
-      {props.data.map(
+      {props.data.chart.map(
         (
           props: {
             id: number;

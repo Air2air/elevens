@@ -20,8 +20,6 @@ import {
   // FONT_CONDENSED_DESKTOP,
 } from "styles/Constants";
 
-
-
 export const ButtonDesktop = styled.button<{ buttonColor?: string }>`
   ${FONT_BUTTON_DESKTOP};
   height: ${BUTTON_HEIGHT}px;
@@ -36,15 +34,11 @@ export const ButtonDesktop = styled.button<{ buttonColor?: string }>`
     margin-right: 10px;
   }
   background: ${(props: { buttonColor?: string }) =>
-      props.buttonColor === "gray"
-        ? BUTTON_COLOR_HOVER_GRAY
-        : props.buttonColor};
+    props.buttonColor === "gray" ? BUTTON_COLOR_HOVER_GRAY : props.buttonColor};
 
   /* &:hover {
     background: ${(props: { buttonColor?: string }) =>
-      props.buttonColor === "gray"
-        ? BUTTON_COLOR_HOVER_GRAY
-        : COLOR_BASE_6};
+    props.buttonColor === "gray" ? BUTTON_COLOR_HOVER_GRAY : COLOR_BASE_6};
   } */
   min-width: ${buttonWidthDesktop};
   @media (min-width: ${BREAKPOINT}px) {
@@ -70,9 +64,7 @@ export const ButtonMobile = styled.div`
     margin-right: 10px;
   }
   background: ${(props: { buttonColor?: string }) =>
-      props.buttonColor === "gray"
-        ? BUTTON_COLOR_HOVER_GRAY
-        : props.buttonColor};
+    props.buttonColor === "gray" ? BUTTON_COLOR_HOVER_GRAY : props.buttonColor};
   &:hover {
     background: ${(props: { buttonColor?: string }) =>
       props.buttonColor === "gray"
