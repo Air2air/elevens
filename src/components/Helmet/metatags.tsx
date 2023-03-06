@@ -36,10 +36,7 @@ const Metatags = (props: {
       ? props.description
       : "Reduce your timeline and slash dilution, risk and time to liquidity.  We cut your timeline to liquidity with world class technical and business experts.  Reducing risk, dilution and time, getting you to the goal line for a fraction of the cost.";
 
-  const hashtag =
-    props.hashtag !== "" || props.hashtag !== undefined
-      ? props.hashtag
-      : "#elevensai";
+
 
   return (
     <Helmet>
@@ -88,6 +85,8 @@ const Metatags = (props: {
 
       <meta property="url" content={currentUrl} />
       <meta property="og:url" content={currentUrl} />
+      <meta property="twitter:domain" content="elevens.ai" />
+      <meta property="twitter:url" content={currentUrl}></meta>
 
       <meta property="og:site_name" content="Elevens.ai" />
       <meta name="twitter:site" content="@elevens_ai" />
