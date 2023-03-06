@@ -1,0 +1,51 @@
+{
+  "page": [
+    {
+      "title": "Elevens Title",
+      "description": "Elevens description. Elevens description. Elevens description. Elevens description. Elevens description.  ",
+      "shareImage": "/images/social/default.webp"
+    }
+  ],
+  "headings": [
+    {
+      "id": 1,
+      "title": "Healthcare AI Markets",
+      "subhead": "The healthcare business market is projected to experience significant growth in the next 20 years..."
+    },
+    {
+      "id": 2,
+      "title": "Healthcare AI Markets",
+      "subhead": "...driven by advancements in technology, an aging population, and an increased focus on preventative care."
+    }
+  ],
+  "chart": [
+    {
+      "id": 1,
+      "label": "HEALTHTECH",
+      "height": 20,
+      "value": "$400B",
+      "backgroundColor": "hsl(30, 72%, 32%)"
+    },
+    {
+      "id": 2,
+      "label": "MEDTECH",
+      "height": 30,
+      "value": "$500B",
+      "backgroundColor": "hsl(24, 73%, 28%)"
+    },
+    {
+      "id": 3,
+      "label": "BIOTECH",
+      "height": 50,
+      "value": "$700B",
+      "backgroundColor": "hsl(11, 75%, 25%)"
+    },
+    {
+      "id": 4,
+      "label": "PHARMATECH",
+      "height": 100,
+      "value": "$1.2T",
+      "backgroundColor": "hsl(2, 68%, 15%)"
+    }
+  ]
+}

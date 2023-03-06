@@ -13,8 +13,8 @@ const MarketsPage = () => {
         overlayOpacity={0.4}
         overlayColor={1}
       />
-      <Heading jsonFile="/data/marketsHeading.json" />
-      <MarketsChart jsonFile="/data/marketsChart.json" />
+      <Heading jsonFile="/data/marketsPage.json" />
+      <MarketsChart jsonFile="/data/marketsPage.json" />
       <RowButton buttonTo="/vision" buttonText="Vision" backgroundColor={1} />
       <Spacer height={40} backgroundColor={1} />
       <CalloutList jsonFile="/data/marketsContent.json" />

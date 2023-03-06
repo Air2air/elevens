@@ -13,8 +13,8 @@ const VisionPage = () => {
         overlayOpacity={0.1}
         overlayColor={1}
       />
-      <Heading jsonFile="/data/visionHeading.json" />
-      <VisionChart jsonFile="/data/visionChart.json" />
+      <Heading jsonFile="/data/visionPage.json" />
+      <VisionChart jsonFile="/data/visionPage.json" />
       <RowButton buttonTo="/history" buttonText="History" backgroundColor={3} />
       <Spacer height={40} backgroundColor={3} />
       <CalloutList jsonFile="/data/visionContent.json" />

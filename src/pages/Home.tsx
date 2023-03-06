@@ -6,7 +6,6 @@ import Heading from "components/Heading/heading";
 import Metatags from "components/Helmet/metatags";
 import OrgsCallout from "components/OrgsCallout/orgsCallOut";
 
-
 const HomePage = () => {
   return (
     <>

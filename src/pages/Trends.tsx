@@ -6,10 +6,10 @@ import Metatags from "components/Helmet/metatags";
 const TrendsPage = () => {
   return (
     <>
-      <Metatags jsonFile="/data/trendsPage.json" />
+      {/* <Metatags jsonFile="/data/trendsPage.json" /> */}
       <Spacer height={140} backgroundColor={1} />
       <TrendsSummary jsonFile="/data/trendsContent.json" />
-      <TrendsList jsonFile="/data/trendsContent.json" />
+      <TrendsList jsonFile="/data/trendsPage.json" />
     </>
   );
 };

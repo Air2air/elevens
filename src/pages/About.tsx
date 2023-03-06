@@ -4,12 +4,14 @@ import { RowButton } from "components/Button/rowButton";
 import Spacer from "components/Spacer/spacer";
 import TeamList from "components/Team/team";
 import Heading from "components/Heading/heading";
+import Metatags from "components/Helmet/metatags";
 
 const AboutPage = () => {
   return (
     <>
+      <Metatags jsonFile="/data/aboutPage.json" />
       <BannerVideo pageVideo={776449715} overlayOpacity={0.7} />
-      <Heading jsonFile="/data/aboutHeading.json" />
+      <Heading jsonFile="/data/aboutPage.json" />
       <Map title="Elevens Worldwide" backgroundColor={2} />
       <TeamList jsonFile="/data/teamContent.json" />
       <Spacer height={40} backgroundColor={2} />

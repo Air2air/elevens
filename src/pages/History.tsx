@@ -14,7 +14,7 @@ const HistoryPage = () => {
         overlayOpacity={0.7}
         overlayColor={1}
       />
-      <Heading jsonFile="/data/historyHeading.json" />
+      <Heading jsonFile="/data/historyPage.json" />
       <Spacer height={40} backgroundColor={2} />
       <RowButton buttonTo="/about" buttonText="About" backgroundColor={2} />
       <Spacer height={40} backgroundColor={2} />

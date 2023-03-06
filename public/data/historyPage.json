@@ -1,0 +1,17 @@
+{
+  "page": [
+    {
+      "title": "Elevens Title",
+      "description": "Elevens description. Elevens description. Elevens description. Elevens description. Elevens description.  ",
+      "shareImage": "/images/social/default.webp"
+    }
+  ],
+  "headings": [
+    {
+      "id": 1,
+      "title": "The History behind Elevens",
+      "subhead": "Dartmouth Workshop and the ''thinking machine''"
+    }
+  ]
+
+}

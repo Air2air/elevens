@@ -10,7 +10,7 @@ const ContactPage = () => {
         overlayOpacity={0.1}
         overlayColor={1}
       />
-      <Heading jsonFile="/data/contactHeading.json" />
+      <Heading jsonFile="/data/contactPage.json" />
       <ContactList jsonFile="/data/contactContent.json"/>
     </>
   );

@@ -1,6 +1,6 @@
 import Container from "components/Container/container";
 import { FetchData } from "fetch/fetch";
-import { ChartSection, ChartSkeleton, ChartWrapper } from "../chartComponents";
+import { ChartSection, ChartSkeleton, ChartWrapper } from "../../chartComponents";
 import ColumnWhatWeDo from "./columnWhatWeDo";
 
 const WhatWeDoChart = ({ jsonFile }) => {
