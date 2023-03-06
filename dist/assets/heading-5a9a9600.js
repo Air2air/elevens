@@ -1,5 +1,5 @@
-import{s as e,B as t,z as E,A as N,i as x,p as T,D as f,q as w,T as b,r as s,m as n,n as B}from"./bannerComponents-ace7d953.js";import{F as D,c as I,d as C,e as H,f as y,g as R,h as v}from"./index-24876990.js";const d=40,A="250px",S="100%",r="hsl(0, 0%, 90%)",h="hsl(0, 86%, 36%)",l="hsl(0, 86%, 46%)",g="rgba(0, 0, 0, 0.4)",_="rgba(50, 50, 50, 0.4)",K=e.div`
-  ${D};
+import{s as e,e as E,U as N,B as t,V as b,W as f,X as w,h as x,i as T,K as B,Y as D,Z as I,q as C,T as H,$ as y,a0 as R,r as s,j as n,b as v}from"./index-230bb9f9.js";const d=40,S="250px",k="100%",r="hsl(0, 0%, 90%)",h="hsl(0, 86%, 36%)",l="hsl(0, 86%, 46%)",g="rgba(0, 0, 0, 0.4)",_="rgba(50, 50, 50, 0.4)",j=e.div`
+  ${E};
   color: ${r};
   padding: 0 16px;
   display: inline-flex;
@@ -17,8 +17,8 @@ import{s as e,B as t,z as E,A as N,i as x,p as T,D as f,q as w,T as b,r as s,m a
   .icon {
     height: 24px;
   }
-`,M=e.div`
-  ${I};
+`,F=e.div`
+  ${N};
   height: ${d}px;
   color: ${r};
   align-items: center;
@@ -32,22 +32,22 @@ import{s as e,B as t,z as E,A as N,i as x,p as T,D as f,q as w,T as b,r as s,m a
   &:hover {
     background: ${a=>a.buttonColor==="gray"?_:l};
   }
-  min-width: ${A};
+  min-width: ${S};
   @media (min-width: ${t}px) {
     display: inline-flex;
   }
   @media (max-width: ${t}px) {
     display: none;
   }
-`,j=e.div`
-  ${C};
+`,G=e.div`
+  ${b};
   height: ${d}px;
   color: ${r};
   align-items: center;
   justify-content: center;
   transition: all 300ms;
   text-transform: uppercase;
-  width: ${S};
+  width: ${k};
   span {
     margin-right: 10px;
   }
@@ -67,15 +67,15 @@ import{s as e,B as t,z as E,A as N,i as x,p as T,D as f,q as w,T as b,r as s,m a
   top: 0;
 
   @media (min-width: ${t}px) {
-    height: ${E}px;
+    height: ${f}px;
     width: 100%;
   }
   @media (max-width: ${t}px) {
-    height: ${N}px;
+    height: ${w}px;
     width: 100%;
   }
   /* background: blue; */
-`,k=e.div`
+`,A=e.div`
   display: flex;
   align-items: flex-end;
   text-align: left;
@@ -90,13 +90,13 @@ import{s as e,B as t,z as E,A as N,i as x,p as T,D as f,q as w,T as b,r as s,m a
   }
   /* background: green; */
 `,L=e.h1`
-  color: ${f};
+  color: ${B};
   text-shadow: 0 0 4px #000;
   @media (min-width: ${t}px) {
-    ${H}
+    ${D}
   }
   @media (max-width: ${t}px) {
-    ${y}
+    ${I}
   }
 `,U=e.div`
   display: flex;
@@ -112,17 +112,17 @@ import{s as e,B as t,z as E,A as N,i as x,p as T,D as f,q as w,T as b,r as s,m a
     width: ${T};
   }
   /* background: red; */
-`,F=e.div`
-  color: ${w};
+`,K=e.div`
+  color: ${C};
   height: auto;
   text-align: left;
-  opacity: ${b};
+  opacity: ${H};
   text-shadow: 0 0 4px #000;
   /* background: red; */
   @media (min-width: ${t}px) {
-    ${R}
+    ${y}
   }
   @media (max-width: ${t}px) {
-    ${v}
+    ${R}
   }
-`,W=({jsonFile:a})=>{const[i,O]=s.useState([]),[o,$]=s.useState(0);return s.useEffect(()=>{(async()=>{const u=await(await fetch(a)).json();O(u)})()},[]),s.useEffect(()=>{const c=setInterval(()=>{$(m=>(m+1)%i.length)},6e3);return()=>clearInterval(c)},[i]),i.length?B(p,{children:[n(k,{children:n(L,{className:"animate__animated animate__fadeInDown",children:i[o].title})}),n(U,{children:n(F,{className:"animate__animated animate__fadeInUp animate__delay-1s",children:i[o].subhead})})]},o):n(p,{})};export{d as B,W as H,M as a,j as b,K as c};
+`,M=({jsonFile:a})=>{const[i,O]=s.useState([]),[o,$]=s.useState(0);return s.useEffect(()=>{(async()=>{const u=await(await fetch(a)).json();O(u)})()},[]),s.useEffect(()=>{const c=setInterval(()=>{$(m=>(m+1)%i.length)},6e3);return()=>clearInterval(c)},[i]),i.length?v(p,{children:[n(A,{children:n(L,{className:"animate__animated animate__fadeInDown",children:i[o].title})}),n(U,{children:n(K,{className:"animate__animated animate__fadeInUp animate__delay-1s",children:i[o].subhead})})]},o):n(p,{})};export{j as B,M as H,d as a,F as b,G as c};

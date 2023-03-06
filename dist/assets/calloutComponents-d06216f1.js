@@ -1,4 +1,4 @@
-import{s as i,B as a,i as e,p as o,q as s,T as n,m as t}from"./bannerComponents-ace7d953.js";import{k as T,l,C as p}from"./index-24876990.js";const r=i.div`
+import{s as i,B as a,h as e,i as n,q as s,T as o,m as T,n as h,j as t,a as l}from"./index-230bb9f9.js";const x=i.div`
   margin: 0 auto;
   z-index: +1;
   height: auto;
@@ -9,19 +9,19 @@ import{s as i,B as a,i as e,p as o,q as s,T as n,m as t}from"./bannerComponents-
   }
   @media (max-width: ${a}px) {
     padding: 20px 0;
-    /* width: ${o}; */
+    /* width: ${n}; */
   }
   /* background: red;; */
-`,x=i.div`
+`,m=i.div`
   color: ${s};
   height: auto;
   text-align: left;
-  opacity: ${n};
+  opacity: ${o};
   /* padding-bottom: 20px; */
   @media (min-width: ${a}px) {
     ${T};
   }
   @media (max-width: ${a}px) {
-    ${l};
+    ${h};
   }
-`,O=d=>t(p,{...d,children:t("div",{style:{height:400}})});export{O as C,r as a,x as b};
+`,O=d=>t(l,{...d,children:t("div",{style:{height:400}})});export{O as C,x as a,m as b};

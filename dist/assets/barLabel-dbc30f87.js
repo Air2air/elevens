@@ -1,4 +1,4 @@
-import{s as i,D as n,B as e,m as a}from"./bannerComponents-ace7d953.js";import{u as o,v as r,w as d,r as s}from"./index-24876990.js";const h=t=>a(m,{style:{animation:t.hidden?"":s(t.index)},children:a(l,{style:{transform:t.rotate?"rotate(90deg)":""},children:t.label})},t.index),m=i.div`
+import{s as i,K as n,B as e,L as o,M as r,N as d,j as a,y as s}from"./index-230bb9f9.js";const c=t=>a(l,{style:{animation:t.hidden?"":s(t.index)},children:a(m,{style:{transform:t.rotate?"rotate(90deg)":""},children:t.label})},t.index),l=i.div`
   position: absolute;
   top: 0;
   height: 100%;
@@ -7,7 +7,7 @@ import{s as i,D as n,B as e,m as a}from"./bannerComponents-ace7d953.js";import{u
   opacity: 0;
   /* display: none; */
   /* background: red; */
-`,l=i.div`
+`,m=i.div`
   position: absolute;
   text-transform: uppercase;
   color: ${n};
@@ -27,4 +27,4 @@ import{s as i,D as n,B as e,m as a}from"./bannerComponents-ace7d953.js";import{u
     min-width: 160px;
   }
   /* background: green; */
-`;export{h as B};
+`;export{c as B};
