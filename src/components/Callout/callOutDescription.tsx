@@ -26,20 +26,20 @@ const CalloutList = ({ jsonFile }) => {
       {data.page && data.page.length > 0 ? (
         data.page.map((props, index) => {
           return (
-              <Container {...props} key={index}>
-                <CallOutInner>
-                  <TitleCallout title={props.title} />
-                  <AnimationOnScroll
-                    animateIn="animate__fadeIn"
-                    delay={0}
-                    offset={60}
-                  >
-                    <CalloutParagraph>
-                      {parse(props.description)}
-                    </CalloutParagraph>
-                  </AnimationOnScroll>
-                </CallOutInner>
-              </Container>
+            <Container {...props} key={index}>
+              <CallOutInner>
+                <TitleCallout title={props.title} />
+                <AnimationOnScroll
+                  animateIn="animate__fadeIn"
+                  delay={0}
+                  offset={60}
+                >
+                  <CalloutParagraph>
+                    {parse(props.description)}
+                  </CalloutParagraph>
+                </AnimationOnScroll>
+              </CallOutInner>
+            </Container>
           );
         })
       ) : (
