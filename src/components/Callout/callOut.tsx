@@ -7,7 +7,7 @@ import parse from "html-react-parser";
 const Callout = (props) => {
   const textParsed = props.text
     ? parse(props.text)
-    : "Data fetch error in Text";
+    : "Data fetch error in Text parser ";
 
   return (
     <>

@@ -5,6 +5,7 @@ import HomeChart from "components/Chart/Home/chartHome";
 import Heading from "components/Heading/heading";
 import Metatags from "components/Helmet/metatags";
 import OrgsCallout from "components/OrgsCallout/orgsCallOut";
+import CalloutDescription from "components/Callout/callOutDescription";
 
 const pageData = "/data/homePage.json";
 
@@ -19,6 +20,7 @@ const HomePage = () => {
       />
       <Heading jsonFile={pageData} />
       <HomeChart jsonFile={pageData} />
+      <CalloutDescription jsonFile={pageData} />
       <RowButton
         buttonTo="/whatwedo"
         buttonText="What we do"

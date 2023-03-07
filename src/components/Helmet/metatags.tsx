@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 
 const Metatags = ({ jsonFile }) => {
+  const location = useLocation();
+
   const { data, loading, error } = FetchData({
     file: jsonFile,
   });
@@ -14,8 +16,6 @@ const Metatags = ({ jsonFile }) => {
   }
 
   const currentTimestamp = new Date(Date.now()).toISOString();
-
-  const location = useLocation();
 
   const currentUrl = "https://www.elevens.ai" + location.pathname;
 

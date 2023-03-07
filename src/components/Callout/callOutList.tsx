@@ -13,8 +13,6 @@ const CalloutList = ({ jsonFile }) => {
     return <div>Error: {error.message}</div>;
   }
 
-
-
   return (
     <>
       {data.content && data.content.length > 0 ? (
