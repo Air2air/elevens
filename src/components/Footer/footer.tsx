@@ -18,7 +18,6 @@ export const Footer = (props: IFooterProps) => {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
-  console.log("backgroundColor: ", props.backgroundColor);
 
   return (
     <>

@@ -13,7 +13,7 @@ const CalloutList = ({ jsonFile }) => {
     return <div>Error: {error.message}</div>;
   }
 
-  console.log(data.content);
+
 
   return (
     <>

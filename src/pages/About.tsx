@@ -11,7 +11,7 @@ const pageData = "/data/aboutPage.json";
 const AboutPage = () => {
   return (
     <>
-      <Metatags jsonFile={pageData}  />
+      <Metatags jsonFile={pageData} />
       <BannerVideo pageVideo={776449715} overlayOpacity={0.7} />
       <Heading jsonFile={pageData} />
       <Map title="Elevens Worldwide" backgroundColor={2} />

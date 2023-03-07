@@ -14,8 +14,8 @@ const ContactPage = () => {
         overlayOpacity={0.1}
         overlayColor={1}
       />
-      <Heading  jsonFile={pageData}/>
-      <ContactList  jsonFile={pageData} />
+      <Heading jsonFile={pageData} />
+      <ContactList jsonFile={pageData} />
     </>
   );
 };

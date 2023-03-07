@@ -84,8 +84,10 @@ export const SubheadText = styled.div`
   /* background: red; */
   @media (min-width: ${BREAKPOINT}px) {
     ${FONT_BANNER_SUBHEAD_DESKTOP}
+    line-height: 1.5em;
   }
   @media (max-width: ${BREAKPOINT}px) {
     ${FONT_BANNER_SUBHEAD_MOBILE}
+    line-height: 1.2em;
   }
 `;

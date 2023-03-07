@@ -14,9 +14,7 @@ const TrendsList = ({ jsonFile }) => {
     return <div>Error: {error.message}</div>;
   }
 
-  console.log(data); // Check if data is being received as expected
-  console.log(data.content); // Check if data.content exists
-  
+
   return (
     <>
       {data && data.content && data.content.length > 0 ? (
