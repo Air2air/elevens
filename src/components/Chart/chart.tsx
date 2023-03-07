@@ -10,7 +10,7 @@ import { BarLabel } from "components/Chart/barLabel";
 import Container from "../Container/container";
 
 const Chart = (props) => {
-\
+
 
   // map through the props.chart and render the chart components
   return (

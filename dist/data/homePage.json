@@ -1,9 +1,26 @@
 {
   "page": [
     {
-      "title": "Elevens Title",
-      "description": "Elevens description. Elevens description. Elevens description. Elevens description. Elevens description.  ",
+      "title": "About Elevens",
+      "description": "<p>Elevens improves your time to liquidity by providing world-class technical and business expertise, reducing risks and dilution, and getting portfolio companies to the goal line for a fraction of the cost. We accelerate portfolio company product development timelines and increase their chances of success through our extensive network of industry experts, strategic partnerships, and funding opportunities.</p><p>We identify areas of improvement, develop and implement growth strategies, and navigate regulatory challenges.</p>",
       "shareImage": "/images/social/default.webp"
+    }
+  ],
+  "headings": [
+    {
+      "id": 1,
+      "title": "Faster liquidity for Health AI ventures",
+      "subhead": "Reduce your timeline and slash dilution, risk and time to liquidity."
+    },
+    {
+      "id": 2,
+      "title": "We cut your timeline to liquidity",
+      "subhead": "With world class technical and business experts."
+    },
+    {
+      "id": 3,
+      "title": "Reducing Risk, Dilution and Time.",
+      "subhead": "Getting you to the goal line for a fraction of the cost."
     }
   ],
   "chart": [
