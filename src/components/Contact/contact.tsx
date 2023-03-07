@@ -12,12 +12,12 @@ const ContactList = ({ jsonFile }) => {
   if (error) {
     return <div>Error: {error.message}</div>;
   }
-  return data && data.length > 0 ? (
-    data.map((props, index) => {
+  return data && data.content.length > 0 ? (
+    data.content.map((props, index) => {
       return <ContactItem key={index} {...props} />;
     })
   ) : (
-    <div style={{ color: "white" }}>Data Fetch error in List component</div>
+    <div style={{ color: "white" }}>Data Fetch error in ContactList component</div>
   );
 };
 

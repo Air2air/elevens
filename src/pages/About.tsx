@@ -6,12 +6,14 @@ import TeamList from "components/Team/team";
 import Heading from "components/Heading/heading";
 import Metatags from "components/Helmet/metatags";
 
+const pageData = "/data/aboutPage.json";
+
 const AboutPage = () => {
   return (
     <>
-      <Metatags jsonFile="/data/aboutPage.json" />
+      <Metatags jsonFile={pageData}  />
       <BannerVideo pageVideo={776449715} overlayOpacity={0.7} />
-      <Heading jsonFile="/data/aboutPage.json" />
+      <Heading jsonFile={pageData} />
       <Map title="Elevens Worldwide" backgroundColor={2} />
       <TeamList jsonFile="/data/teamContent.json" />
       <Spacer height={40} backgroundColor={2} />

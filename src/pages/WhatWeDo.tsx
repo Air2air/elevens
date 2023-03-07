@@ -6,24 +6,26 @@ import WhatWeDoChart from "components/Chart/Vision/WhatWeDo/chartWhatWeDo";
 import Heading from "components/Heading/heading";
 import Metatags from "components/Helmet/metatags";
 
+const pageData = "/data/whatwedoPage.json";
+
 const WhatWeDoPage = () => {
   return (
     <>
-      <Metatags jsonFile="/data/whatwedoPage.json" />
+      <Metatags jsonFile={pageData} />
       <BannerVideo
         pageVideo={776449715}
         overlayOpacity={0.7}
         overlayColor={1}
       />
-      <Heading jsonFile="/data/whatwedoPage.json" />
-      <WhatWeDoChart jsonFile="/data/whatwedoPage.json" />
+      <Heading jsonFile={pageData} />
+      <WhatWeDoChart jsonFile={pageData} />
       <RowButton
         buttonTo="/casestudies"
         buttonText="Case Studies"
         backgroundColor={3}
       />
       <Spacer height={40} backgroundColor={3} />
-      <CalloutList jsonFile="/data/whatwedoContent.json" />
+      <CalloutList jsonFile={pageData} />
       <Spacer height={40} backgroundColor={2} />
       <RowButton
         buttonTo="/casestudies"

@@ -6,17 +6,19 @@ import Heading from "components/Heading/heading";
 import Metatags from "components/Helmet/metatags";
 import OrgsCallout from "components/OrgsCallout/orgsCallOut";
 
+const pageData = "/data/homePage.json";
+
 const HomePage = () => {
   return (
     <>
-      <Metatags jsonFile="/data/homePage.json" />
+      <Metatags jsonFile={pageData} />
       <BannerVideo
         pageVideo={776443340}
         overlayOpacity={0.1}
         overlayColor={1}
       />
-      <Heading jsonFile="/data/homePage.json" />
-      <HomeChart jsonFile="/data/homePage.json" />
+      <Heading jsonFile={pageData} />
+      <HomeChart jsonFile={pageData} />
       <RowButton
         buttonTo="/whatwedo"
         buttonText="What we do"

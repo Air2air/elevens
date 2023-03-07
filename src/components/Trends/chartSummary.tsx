@@ -12,7 +12,7 @@ const ChartSummary = ({ data, xAxisType }) => {
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
-  const sortedData = data.sort((a, b) => a[xAxisType] - b[xAxisType]);
+  const sortedData = data.content.sort((a, b) => a[xAxisType] - b[xAxisType]);
 
   const options = {
     grid: {
