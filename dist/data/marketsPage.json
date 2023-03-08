@@ -53,25 +53,25 @@
       "id": 1,
       "backgroundColor": "hsl(30, 72%, 32%)",
       "title": "HEALTHTECH",
-      "text": "<p>The healthcare technology market is expected to continue growing in the coming years. According to a report by Mordor Intelligence, the global healthcare technology market is expected to reach $634.3 billion by 2025, growing at a compound annual growth rate of 7.5% from 2020 to 2025. This growth is largely driven by the increasing adoption of digital technologies in healthcare, such as electronic health records, telemedicine, and wearable devices.</p>"
+      "text": "<p>Per Mordor Intelligence, the healthcare technology industry is anticipated to expand to a value of $634.3 billion by 2025. The industry is expected to grow at a compound annual growth rate of 7.5% from 2020 to 2025. The escalation in chronic illnesses, rising healthcare expenses, and aging populations have also played a role in the development of the healthcare technology market. The integration of digital technologies has aided in enhancing patient results and streamlining healthcare delivery, further boosting the demand for these technologies.</p><p>Furthermore, the COVID-19 pandemic has expedited the implementation of telemedicine and other digital health solutions, contributing to a surge in the healthcare technology market. Consequently, investors are increasingly seeking to invest in healthcare technology companies that provide innovative solutions to these issues and exhibit robust growth potential.</p>"
     },
     {
       "id": 2,
       "backgroundColor": "hsl(24, 73%, 28%)",
       "title": "MEDTECH",
-      "text": "<p>The size of the medical technology market in the next 10 years is influenced by factors such as technological advancements, regulatory changes, and economic conditions. However, some estimates suggest that the medical technology market is expected to reach $722.4 billion by 2026, at a compound annual growth rate of 6.4% from 2021 to 2026.</p>"
+      "text": "<p>In the coming decade, several key drivers including technological innovations, regulatory policies, and economic shifts, are poised to impact the growth trajectory of the healthcare technology industry. Despite the inherent unpredictability of these factors, projections indicate that the medical technology market could potentially exceed $722.4 billion by 2026, experiencing a steady compound annual growth rate of 6.4% from 2021 to 2026.</p>"
     },
     {
       "id": 3,
       "backgroundColor": "hsl(11, 75%, 25%)",
       "title": "BIOTECH",
-      "text": "<p>According to a report by Markets and Markets, the global biotech market is expected to reach a size of $742.4 billion by 2025, growing at a CAGR of 7.6% from 2020 to 2025. However, this projection may vary depending on influenced by various factors such as technological advancements, regulatory approval processes, market demand, and economic conditions.</p> "
+      "text": "<p>As per a report from Markets and Markets, the biotech market worldwide is predicted to attain a whopping valuation of $742.4 billion by the year 2025, indicating an impressive Compound Annual Growth Rate (CAGR) of 7.6% between the years 2020 and 2025. Nevertheless, this estimation remains susceptible to fluctuations based on several factors, including advancements in technology, regulatory approval processes, market demand, and economic circumstances.</p> "
     },
     {
       "id": 4,
       "backgroundColor": "hsl(2, 68%, 15%)",
       "title": "PHARMATECH",
-      "text": "<p>The pharmaceutical market will continue to grow, driven by factors such as an aging population, increasing prevalence of chronic diseases, and advances in technology and drug development.</p><p>One trend that is likely to continue is the growth of specialty and biologic drugs, which are often used to treat chronic and complex conditions. These drugs tend to be more expensive than traditional small molecule drugs, and their sales are expected to account for a larger share of the overall pharmaceutical market.</p><p>Another trend that is likely to impact the pharmaceutical market is the increasing focus on personalized medicine, which involves the development of treatments tailored to the specific characteristics of individual patients. This approach is expected to become more prevalent as the ability to analyze and interpret large amounts of data improves, and as the understanding of the genetic and molecular basis of diseases advances.</p>"
+      "text": "<p>It is predicted that the pharmaceutical industry will witness continued growth owing to several factors including the aging population, surging prevalence of chronic diseases, and advancements in technology and drug development.</p><p>Specialty and biologic drugs are projected to continue their upward trajectory, as they are commonly used to treat chronic and complicated ailments. These drugs often come with a higher price tag compared to conventional small molecule drugs, and they are expected to make up a more substantial proportion of the total pharmaceutical market.</p><p>Personalized medicine is gaining momentum in the pharmaceutical industry. This approach involves developing customized treatments for individual patients based on their unique characteristics. It is anticipated that this trend will become even more prominent in the future as the ability to analyze and interpret vast amounts of data improves, and our comprehension of the genetic and molecular basis of diseases progresses.</p>"
     }
   ]
 }

@@ -2,13 +2,13 @@ import Spacer from "components/Spacer/spacer";
 import ReportList from "components/Reports/reportList";
 
 
-const pageData = "/data/marketsPage.json";
+const pageData = "/data/fda/endpoints.json";
 
 const ReportsPage = () => {
   return (
     <>
       <Spacer height={140} backgroundColor={1} />
-      <ReportList jsonFile="/data/fda/endpoints.json" />
+      <ReportList jsonFile={pageData} />
     </>
   );
 };

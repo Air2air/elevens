@@ -1,4 +1,4 @@
-import Callout from "./callOut";
+
 import { FetchData } from "fetch/fetch";
 import {
   CallOutInner,

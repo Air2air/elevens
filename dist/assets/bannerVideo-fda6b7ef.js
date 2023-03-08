@@ -1,1 +1,0 @@
-import{r,_ as o,j as e,F as t,b as i,T as s,O as n}from"./index-cf40b924.js";const l=r.lazy(()=>o(()=>import("./vimeoPlayer-5c569bac.js"),["assets/vimeoPlayer-5c569bac.js","assets/index-cf40b924.js","assets/index-2d4c25b0.css"])),c=a=>e(t,{children:i(s,{children:[e(l,{videoID:a.pageVideo}),e(n,{style:{opacity:a.overlayOpacity,background:a.overlayColor}})]})});export{c as B};

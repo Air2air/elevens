@@ -1,4 +1,4 @@
-import{s as tn,L as we,B as St,k as Ae,l as Oe,j as z,p as b,R as Hn,F as Se,a as Pe,b as dt,U as Ee}from"./index-cf40b924.js";import{c as bn,d as Ce,e as Ie}from"./heading-17338026.js";const Er=t=>z(Ne,{children:z(Te,{color:t.color,children:t.title})}),Ne=tn.div`
+import{s as tn,L as we,B as St,k as Ae,l as Oe,j as z,p as b,R as Hn,F as Se,a as Pe,b as dt,U as Ee}from"./index-bd4cd023.js";import{c as bn,d as Ce,e as Ie}from"./heading-f902a0d4.js";const Er=t=>z(Ne,{children:z(Te,{color:t.color,children:t.title})}),Ne=tn.div`
   text-align: left;
   width: 100%;
   min-height: 50px;
