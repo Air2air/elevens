@@ -17,9 +17,9 @@ const ChartSummary = ({ data, xAxisType }) => {
   const options = {
     grid: {
       top: 0,
-      right: 20,
+      right: 10,
       bottom: 50,
-      left: 250,
+      left: width > BREAKPOINT ? 250 : 150,
       show: false,
     },
     xAxis: {
@@ -31,14 +31,14 @@ const ChartSummary = ({ data, xAxisType }) => {
           : "CAGR (%)",
       nameTextStyle: {
         fontFamily: FONT_FAMILY_CONDENSED,
-        fontSize: 17,
+        fontSize: width > BREAKPOINT ? 17 : 14,
         color: "rgba(255,255,255,1)",
       },
       nameLocation: "center",
       nameGap: 35,
       axisLabel: {
         fontFamily: FONT_FAMILY_CONDENSED,
-        fontSize: 17,
+        fontSize: width > BREAKPOINT ? 17 : 14,
         color: "rgba(255,255,255,1)",
         name: "X-Axis Name",
         nameTextStyle: {
@@ -58,15 +58,13 @@ const ChartSummary = ({ data, xAxisType }) => {
     },
     yAxis: {
       type: "category",
-      data: sortedData.map((item) => item.title),
-      // name:
-      //   xAxisType === "cap_current"
-      //     ? "Market Cap (in billions USD)"
-      //     : "CAGR (%)",
-      // nameLocation: "start",
+      data:
+        width > BREAKPOINT
+          ? sortedData.map((item) => item.title)
+          : sortedData.map((item) => item.titleShort),
       axisLabel: {
         fontFamily: FONT_FAMILY_CONDENSED,
-        fontSize: 17,
+        fontSize: width > BREAKPOINT ? 17 : 14,
         color: "rgba(255,255,255,0.8)",
         location: "inside",
         padding: [0, 20, 60, 0],

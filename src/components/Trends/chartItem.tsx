@@ -22,7 +22,7 @@ const ChartItem = (props) => {
       show: false,
     },
     xAxis: {
-      // show: true,
+      show: true,
       // type: "category",
       data: props.chartData.map((item) => item.key),
       name: "date",
