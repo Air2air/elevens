@@ -26,38 +26,52 @@ export const TrendsInner = styled.div`
 
 export const TrendsHeader = styled.div`
   display: flex;
-
   align-items: center;
   justify-content: space-between;
   width: 100%;
   @media (min-width: ${BREAKPOINT}px) {
     flex-direction: row;
-    height: ${headerHeightDesktop}px;
+    /* height: ${headerHeightDesktop}px; */
     margin-bottom: ${chartMarginDesktop}px;
   }
   @media (max-width: ${BREAKPOINT}px) {
     flex-direction: column;
-    height: ${headerHeightMobile * 2}px;
+    /* height: ${headerHeightMobile * 3}px; */
     margin-bottom: ${chartMarginMobile}px;
   }
   div.title {
     font-family: ${FONT_FAMILY_HEADING};
     color: ${COLOR_TEXT};
     display: flex;
-      align-items: center;
-      justify-content: center;
+    align-items: center;
+    justify-content: center;
     @media (min-width: ${BREAKPOINT}px) {
       height: ${headerHeightDesktop}px;
       font-size: 1.6em;
       line-height: 1em;
     }
     @media (max-width: ${BREAKPOINT}px) {
-
       height: ${headerHeightMobile}px;
       font-size: 1.4em;
       line-height: 1em;
     }
     /* background: green; */
+  }
+  /* background: gold; */
+`;
+
+export const ButtonRow = styled.div`
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* width: 100%; */
+  @media (min-width: ${BREAKPOINT}px) {
+    height: ${headerHeightDesktop}px;
+
+  }
+  @media (max-width: ${BREAKPOINT}px) {
+    height: ${headerHeightMobile}px;
+
   }
   /* background: gold; */
 `;
